@@ -15,6 +15,10 @@
     display: flex;
 }
 
+.header__home {
+    display: flex;
+}
+
 .header__search {
     background-color: var(--color-gray);
     border: 1px solid var(--selected-container);
@@ -55,7 +59,8 @@
     border-radius: 5px;
     color: var(--color-blue);
     cursor: pointer;
-    padding: 0.7rem 5rem;
+    width: 185px;
+    height: 40px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -76,7 +81,6 @@
 
 @media screen and (max-width: 767px) {
     .header__container {
-        justify-content: space-evenly;
         padding: 1rem;
     }
 
@@ -95,6 +99,7 @@
     }
 
     .header__btn--login {
-        padding: 0.7rem 3rem;
+        width: 120px;
+        height: 30px;
     }
 }
