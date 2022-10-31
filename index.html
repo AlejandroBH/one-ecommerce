@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/styles/modules/header.css">
     <link rel="stylesheet" href="assets/styles/modules/banner.css">
     <link rel="stylesheet" href="assets/styles/modules/products.css">
+    <link rel="stylesheet" href="assets/styles/modules/contact.css">
     <!-- Exportamos fuente externa de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -154,7 +155,7 @@
                 <!-- Productos: Diversos -->
                 <div class="products__section">
                     <div class="products__header">
-                        <h2 class="products__title">Star War</h2>
+                        <h2 class="products__title">Diversos</h2>
                         <a class="products__viewAll" href="#">Ver todo<img class="products__imgArrow" src="assets/images/arrow_icon.svg"></a>
                     </div>
                     <div class="products__cards">
@@ -203,6 +204,30 @@
                 </div>
             </div>
         </section>
+
+        <footer>
+            <section class="contact">
+                <div class="contact__container">
+                    <div class="contact__image">
+                        <a href="#"><img src="assets/images/logo.svg" alt="Logo tienda"></a>
+                    </div>
+                    <ul class="contact__nav">
+                        <li><a class="contact__item" href="#">Quienes somos</a></li>
+                        <li><a class="contact__item" href="#">Política de privacidad</a></li>
+                        <li><a class="contact__item" href="#">Programa de fidelidad</a></li>
+                        <li><a class="contact__item" href="#">Nuestras Tiendas</a></li>
+                        <li><a class="contact__item" href="#">Quiero ser franquiciado</a></li>
+                        <li><a class="contact__item" href="#">Anúncie aquí</a></li>
+                    </ul>
+                    <form class="contact__form" action="" name="form">
+                        <label class="contact__tittle" for="name">Hable con nosotros</label>
+                        <input id="name" class="contact__input" type="text" placeholder="Nombre">
+                        <textarea class="contact__input contact__input--area" name="message" placeholder="Escribe tu mensaje" id="message"></textarea>
+                        <button class="contact__btn--form" type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+            </section>
+        </footer>
 
     </main>
 </body>

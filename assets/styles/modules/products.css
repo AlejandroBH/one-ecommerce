@@ -1,10 +1,14 @@
 /* Products */
+.products {
+    background-color: var(--color-gray);
+}
+
 .products__container {
     border: 1px solid var(--selected-container);
     display: flex;
     flex-direction: column;
-    height: 100vh;
     margin: auto;
+    padding-bottom: 3rem;
     width: var(--container-size);
 }
 
