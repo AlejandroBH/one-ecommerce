@@ -4,7 +4,7 @@
     --color-darkgray: #464646;
     --color-lightblue: #EAF2FD;
     --color-white: #FFFFFF;
-    --container-size: 80%;
+    --container-size: 1440px;
     --font-default: 'Raleway', sans-serif;
     --gradient-black: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
     --selected-container: transparent;
