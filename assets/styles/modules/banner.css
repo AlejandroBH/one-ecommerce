@@ -1,7 +1,7 @@
 /* Banner */
 .banner {
     background-color: rgb(21, 66, 51);
-    background: url(../assets/banner.jpg);
+    background: url('../../images/banner.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -20,7 +20,6 @@
 
 .banner__information {
     background: var(--gradient-black);
-    /* border: 1px solid var(--selected-container); */
     border-radius: 10px;
     padding: 1rem 2rem;
 }
@@ -47,4 +46,30 @@
     font-size: 1rem;
     padding: 1rem;
     width: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner__container {
+        padding: 1rem;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .banner__container {
+        padding: 0.5rem;
+        width: auto;
+    }
+
+    .banner__information {
+        padding: 1rem;
+    }
+
+    .banner__title {
+        font-size: 2rem;
+    }
+
+    .banner__paragraph {
+        font-weight: 100;
+    }
 }

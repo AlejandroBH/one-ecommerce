@@ -22,9 +22,9 @@
     display: flex;
     font-size: 1rem;
     justify-content: space-between;
-    margin-left: 25px;
+    margin: 0px 25px;
     padding: 0.5rem 1rem;
-    width: 393px;
+    width: 400px;
 }
 
 .header__input {
@@ -45,6 +45,10 @@
     display: flex;
 }
 
+.header__btn--search-mini {
+    display: none;
+}
+
 .header__btn--login {
     background-color: transparent;
     border: 1px solid var(--color-blue);
@@ -52,4 +56,45 @@
     color: var(--color-blue);
     cursor: pointer;
     padding: 0.7rem 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__container {
+        height: auto;
+        padding: 1rem 2rem;
+        width: auto;
+    }
+
+    .header__logo {
+        width: 125px;
+    }
+
+    .header__search {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__container {
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .header__btn--search-mini {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header__logo {
+        width: 100px;
+    }
+
+    .header__btn--login {
+        padding: 0.7rem 3rem;
+    }
 }

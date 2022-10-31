@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Geek</title>
     <!-- Exportamos hojas de estilo -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/module-header.css">
-    <link rel="stylesheet" href="css/module-banner.css">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/base.css">
+    <link rel="stylesheet" href="assets/styles/modules/header.css">
+    <link rel="stylesheet" href="assets/styles/modules/banner.css">
     <!-- Exportamos fuente externa de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,14 +23,15 @@
             <div class="header__container">
                 <div class="header__left">
                     <a class="header__home" href="index.html">
-                        <h1><img class="header__logo" src="assets/logo.svg" alt="Logo tienda"></h1>
+                        <img class="header__logo" src="assets/images/logo.svg" alt="Logo tienda">
                     </a>
                     <form class="header__search" action="">
                         <input class="header__input" type="text" placeholder="¿Qué deseas buscar?">
-                        <button class="header__btn--search"><img src="assets/search_icon.svg" alt="Icono de busqueda"></button>
+                        <button class="header__btn--search"><img src="assets/images/search_icon.svg" alt="Icono de busqueda"></button>
                     </form>
                 </div>
                 <button class="header__btn--login">Login</button>
+                <button class="header__btn--search header__btn--search-mini"><img src="assets/images/search_icon.svg" alt="Icono de busqueda"></button>
             </div>
         </header>
 
