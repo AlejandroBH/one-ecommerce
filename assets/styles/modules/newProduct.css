@@ -1,9 +1,9 @@
 /* Login */
-.login {
+.newProduct {
     background-color: var(--color-gray);
 }
 
-.login__container {
+.newProduct__container {
     border: 1px solid var(--selected-container);
     display: flex;
     justify-content: center;
@@ -13,19 +13,20 @@
     width: var(--container-size);
 }
 
-.login__form {
+.newProduct__form {
     display: flex;
     flex-direction: column;
-    width: 423px;
+    width: 559px;
 }
 
-.login__tittle {
+.newProduct__tittle {
     color: var(--color-darkgray);
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 700;
+    text-align: left;
 }
 
-.login__input {
+.newProduct__input {
     border: none;
     border-bottom: 1px solid var(--color-lightgray);
     border-radius: 5px;
@@ -33,24 +34,39 @@
     padding: 1rem;
 }
 
-.login__input:focus,
-.login__input:active {
+.newProduct__input:focus,
+.newProduct__input:active {
     outline: none;
 }
 
-.login__btn--form {
+.newProduct__input--area {
+    height: 6rem;
+    resize: none;
+}
+
+.newProduct__btn--form {
     background-color: var(--color-blue);
     border: 1px solid var(--color-blue);
     border-radius: 5px;
     color: var(--color-white);
     cursor: pointer;
-    font-weight: 600;
     padding: 1rem 0;
 }
 
 @media screen and (max-width: 1024px) {
-    .login__container {
+    .newProduct__container {
         padding: 1rem;
         width: auto;
+    }
+
+    .newProduct__tittle {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__btn--admin {
+        width: 120px;
+        height: 30px;
     }
 }

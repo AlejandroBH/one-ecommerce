@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Alura Geek</title>
+    <title>Nuevo Producto - Alura Geek</title>
     <!-- Exportamos hojas de estilo -->
     <link rel="stylesheet" href="../assets/styles/normalize.css">
     <link rel="stylesheet" href="../assets/styles/base.css">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../assets/styles/modules/products.css">
     <link rel="stylesheet" href="../assets/styles/modules/contact.css">
     <link rel="stylesheet" href="../assets/styles/modules/copyright.css">
-    <link rel="stylesheet" href="../assets/styles/modules/login.css">
+    <link rel="stylesheet" href="../assets/styles/modules/newProduct.css">
     <!-- Exportamos fuente externa de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,18 +35,21 @@
                         <button class="header__btn--search"><img src="../assets/images/search_icon.svg" alt="Icono de busqueda"></button>
                     </form>
                 </div>
-                <!-- <a href="screens/login.html"><button class="header__btn--login">Login</button></a> -->
+                <a href="#"><button class="header__btn--admin">Menú Admin</button></a>
                 <button class="header__btn--search header__btn--search-mini"><img src="../assets/images/search_icon.svg" alt="Icono de busqueda"></button>
             </div>
         </header>
 
-        <section class="login">
-            <div class="login__container">
-                <form class="login__form" action="" name="form">
-                    <label class="login__tittle" for="email">Iniciar Sesión</label>
-                    <input class="login__input" id="email" type="email" placeholder="Escriba su correo electrónico">
-                    <input class="login__input" type="password" placeholder="Escriba su contraseña">
-                    <button class="login__btn--form" type="submit">Entrar</button>
+        <section class="newProduct">
+            <div class="newProduct__container">
+                <form class="newProduct__form" action="" name="form">
+                    <label class="newProduct__tittle" for="product">Agregar nuevo producto</label>
+                    <input class="newProduct__input" id="product" type="text" placeholder="URL de imagen">
+                    <input class="newProduct__input" type="text" placeholder="Categoría">
+                    <input class="newProduct__input" type="text" placeholder="Nombre del producto">
+                    <input class="newProduct__input" type="text" placeholder="Precio del producto">
+                    <textarea class="newProduct__input newProduct__input--area" name="description" placeholder="Descripción del producto" id="description"></textarea>
+                    <button class="newProduct__btn--form" type="submit">Agregar Producto</button>
                 </form>
             </div>
         </section>
