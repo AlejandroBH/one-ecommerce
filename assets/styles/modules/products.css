@@ -41,6 +41,17 @@
     margin-left: 10px;
 }
 
+.products__btn--add {
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 5px;
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 200px;
+}
+
 .products__cards {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -77,6 +88,10 @@
     color: var(--color-blue);
     font-weight: 700;
     text-decoration: none;
+}
+
+.card__id {
+    color: var(--color-darkgray);
 }
 
 @media screen and (max-width: 1024px) {
@@ -117,6 +132,14 @@
 }
 
 @media screen and (max-width: 767px) {
+    .products__header {
+        flex-direction: column;
+    }
+
+    .products__btn--add {
+        margin: 1rem 0 0 0;
+    }
+
     .products__cards {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
