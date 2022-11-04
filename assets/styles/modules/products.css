@@ -24,6 +24,13 @@
     justify-content: space-between;
 }
 
+.products__headerAll {
+    align-items: center;
+    border: 1px solid var(--selected-container);
+    display: flex;
+    justify-content: space-between;
+}
+
 .products__title {
     color: var(--color-darkgray);
     font-size: 2rem;
@@ -132,7 +139,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .products__header {
+    .products__headerAll {
         flex-direction: column;
     }
 
