@@ -46,6 +46,11 @@
     cursor: pointer;
     font-weight: 600;
     padding: 1rem 0;
+    transition: 0.3s;
+}
+
+.login__btn--form:hover {
+    background-color: var(--color-bluehover);
 }
 
 @media screen and (max-width: 1024px) {
