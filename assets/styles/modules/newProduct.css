@@ -51,6 +51,11 @@
     color: var(--color-white);
     cursor: pointer;
     padding: 1rem 0;
+    transition: 0.3s;
+}
+
+.newProduct__btn--form:hover {
+    background-color: var(--color-bluehover);
 }
 
 @media screen and (max-width: 1024px) {

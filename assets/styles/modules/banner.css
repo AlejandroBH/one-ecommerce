@@ -45,7 +45,12 @@
     cursor: pointer;
     font-size: 1rem;
     padding: 1rem;
+    transition: 0.3s;
     width: 200px;
+}
+
+.banner__btn--offer:hover {
+    background-color: var(--color-bluehover);
 }
 
 @media screen and (max-width: 1024px) {

@@ -56,7 +56,12 @@
     cursor: pointer;
     font-size: 1rem;
     padding: 1rem;
+    transition: 0.3s;
     width: 200px;
+}
+
+.products__btn--add:hover {
+    background-color: var(--color-bluehover);
 }
 
 .products__cards {
@@ -78,6 +83,31 @@
 
 .card__image {
     width: 100%;
+}
+
+.card__actions {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card__btn {
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-white);
+    cursor: pointer;
+    display: flex;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 5px;
+}
+
+.card__btn--delete {
+    background-color: var(--color-red);
+}
+
+.card__btn--edit {
+    background-color: var(--color-green);
 }
 
 .card__name {
