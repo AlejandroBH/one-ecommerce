@@ -168,7 +168,7 @@
     }
 }
 
-@media screen and (min-width: 426px) and (max-width: 767px){
+@media screen and (min-width: 426px) and (max-width: 767px) {
     .products__headerAll {
         flex-direction: column;
     }
@@ -183,9 +183,17 @@
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
+    .products__headerAll {
+        flex-direction: column;
+    }
+
+    .products__btn--add {
+        margin: 1rem 0 0 0;
+    }
+
     .products__cards {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-    } 
+    }
 }
