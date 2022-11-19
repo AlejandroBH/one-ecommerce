@@ -115,13 +115,34 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
     .header__logo {
         width: 100px;
     }
 
     .header__btn--login {
         height: 30px;
-        width: 120px;
+        width: 150px;
+    }
+
+    .header__btn--admin {
+        height: 30px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 374px) {
+    .header__logo {
+        width: 100px;
+    }
+
+    .header__btn--login {
+        height: 30px;
+        width: 100px;
+    }
+
+    .header__btn--admin {
+        height: 30px;
+        width: 100px;
     }
 }

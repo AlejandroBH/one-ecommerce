@@ -68,10 +68,3 @@
         font-size: 1.3rem;
     }
 }
-
-@media screen and (max-width: 320px) {
-    .header__btn--admin {
-        width: 120px;
-        height: 30px;
-    }
-}
