@@ -53,6 +53,27 @@
     background-color: var(--color-bluehover);
 }
 
+.login__validation {
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+.login__validation--valid {
+    background: rgba(0, 255, 0, 0.1);
+    border-top: 1px solid #006900;
+    border-bottom: 1px solid #006900;
+    color: #006900;
+}
+
+.login__validation--invalid {
+    background: rgba(255, 0, 0, 0.1);
+    border-top: 1px solid #be0000;
+    border-bottom: 1px solid #be0000;
+    color: #be0000;
+}
+
 @media screen and (max-width: 1024px) {
     .login__container {
         padding: 1rem;

@@ -43,11 +43,12 @@
 
         <section class="login">
             <div class="login__container">
-                <form class="login__form" action="" name="form">
+                <form class="login__form" action="" name="form" data-loginForm>
                     <label class="login__tittle" for="email">Iniciar Sesión</label>
-                    <input class="login__input" id="email" type="email" placeholder="Escriba su correo electrónico">
-                    <input class="login__input" type="password" placeholder="Escriba su contraseña">
-                    <button class="login__btn--form" type="submit">Entrar</button>
+                    <input class="login__input" id="email" type="email" placeholder="Escriba su correo electrónico" data-inputEmail>
+                    <input class="login__input" type="password" placeholder="Escriba su contraseña" data-inputPassword>
+                    <button class="login__btn--form" type="submit" data-btnLogin>Entrar</button>
+                    <span class="login__validation"></span>
                 </form>
             </div>
         </section>
@@ -91,6 +92,8 @@
         </footer>
 
     </main>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../components/login.js"></script>
 </body>
 
 </html>
