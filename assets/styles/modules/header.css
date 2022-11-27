@@ -45,6 +45,7 @@
 .header__btn--search {
     background-color: transparent;
     border: 1px solid var(--selected-container);
+    color: #b3b2b2;
     cursor: pointer;
     display: flex;
 }

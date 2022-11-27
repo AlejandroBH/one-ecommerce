@@ -4,7 +4,7 @@ const inputPassword = document.querySelector('[data-inputPassword]');
 const btnLogin = document.querySelector('[data-btnLogin]');
 
 const user = 'admin@correo.com';
-const pass = 'admin123';
+const pass = 'AluraG3';
 
 const verifyLogin = () => {
     if (inputEmail.value === user && inputPassword.value === pass) {
