@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todos los productos - Alura Geek</title>
+    <title>Editar productos - Alura Geek</title>
     <!-- Exportamos hojas de estilo -->
     <link rel="stylesheet" href="../assets/styles/normalize.css">
     <link rel="stylesheet" href="../assets/styles/base.css">
@@ -14,11 +14,13 @@
     <link rel="stylesheet" href="../assets/styles/modules/products.css">
     <link rel="stylesheet" href="../assets/styles/modules/contact.css">
     <link rel="stylesheet" href="../assets/styles/modules/copyright.css">
-    <!-- Exportamos fuente externa de google -->
+    <!-- Importamos fuente externa de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/images/favicon.svg">
+    <!-- Importamos fontawesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -35,7 +37,7 @@
                         <button class="header__btn--search"><img src="../assets/images/search_icon.svg" alt="Icono de busqueda"></button>
                     </form>
                 </div>
-                <!-- <a href="screens/login.html"><button class="header__btn--login">Login</button></a> -->
+                <a href="" data-logoutSession><button class="header__btn--login"><i class="fa-solid fa-right-from-bracket"></i> Logout</button></a>
                 <button class="header__btn--search header__btn--search-mini"><img src="../assets/images/search_icon.svg" alt="Icono de busqueda"></button>
             </div>
         </header>
@@ -45,7 +47,7 @@
                 <!-- Todos los productos -->
                 <div class="products__section">
                     <div class="products__headerAll">
-                        <h2 class="products__title">Todos los productos</h2>
+                        <h2 class="products__title">Editar productos</h2>
                         <a href="new_product.html"><button class="products__btn--add">Agregar Producto</button></a>
 
                     </div>
@@ -293,6 +295,8 @@
         </footer>
 
     </main>
+    <script src="../services/logout.js"></script>
+    <script src="../components/lockScreen.js"></script>
     <script type="module" src="../services/client-services.js"></script>
 </body>
 
