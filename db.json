@@ -1,0 +1,46 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "name": "Producto",
+            "description": "Esta es la descripcion de un producto",
+            "price": 60,
+            "image": "assets/images/products/diversos/diversos_1.png"
+        },
+        {
+            "id": 2,
+            "name": "Producto",
+            "description": "Esta es la descripcion de un producto",
+            "price": 60,
+            "image": "assets/images/products/diversos/diversos_2.png"
+        },
+        {
+            "id": 3,
+            "name": "Producto",
+            "description": "Esta es la descripcion de un producto",
+            "price": 60,
+            "image": "assets/images/products/diversos/diversos_3.png"
+        },
+        {
+            "id": 4,
+            "name": "Producto",
+            "description": "Esta es la descripcion de un producto",
+            "price": 60,
+            "image": "assets/images/products/diversos/diversos_4.png"
+        },
+        {
+            "id": 5,
+            "name": "Producto",
+            "description": "Esta es la descripcion de un producto",
+            "price": 60,
+            "image": "assets/images/products/diversos/diversos_5.png"
+        },
+        {
+            "id": 6,
+            "name": "Producto",
+            "description": "Esta es la descripcion de un producto",
+            "price": 60,
+            "image": "assets/images/products/diversos/diversos_6.png"
+        }
+    ]
+}
