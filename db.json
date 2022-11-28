@@ -2,45 +2,45 @@
     "product": [
         {
             "id": 1,
-            "name": "Producto",
-            "description": "Esta es la descripcion de un producto",
-            "price": 60,
-            "image": "assets/images/products/diversos/diversos_1.png"
+            "name": "Iphone 14 Pro",
+            "description": "Una forma nueva y mágica de interactuar con tu iPhone. Una nueva funcionalidad de seguridad diseñada para salvar vidas. Y una innovadora cámara de 48 MP que logra un nivel de detalle deslumbrante. Todo gracias a la potencia del ultrarrápido chip A16 Bionic.",
+            "price": 500.99,
+            "image": "https://i.ibb.co/JjRppW3/image-1.jpg"
         },
         {
             "id": 2,
-            "name": "Producto",
-            "description": "Esta es la descripcion de un producto",
-            "price": 60,
-            "image": "assets/images/products/diversos/diversos_2.png"
+            "name": "Play Station 6",
+            "description": "Con tu consola PlayStation 6 tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos. PlayStation renovó las expectativas del mundo virtual con esta nueva consola y su gran rendimiento. Cuenta con una interfaz de usuario más rápida y fácil de navegar que en anteriores modelos. Además, podrás jugar durante horas desafiando a millones de contrincantes alrededor del mundo que esperan nuevos retos.",
+            "price": 250.99,
+            "image": "https://i.ibb.co/17k7GFS/image-2.png"
         },
         {
             "id": 3,
-            "name": "Producto",
-            "description": "Esta es la descripcion de un producto",
-            "price": 60,
-            "image": "assets/images/products/diversos/diversos_3.png"
+            "name": "Tarjeta Grafica RTX 5090",
+            "description": "Este componente electrónico procesa la información que llega al dispositivo y los transforma en imágenes o videos para mostrarla visualmente. Es ideal para trabajar con aplicaciones gráficas ya que permite obtener imágenes más nítidas. Nvidia es el fabricante líder de placas de video; su calidad asegura una experiencia positiva en el desarrollo del motor gráfico de tu computadora. Además, sus procesadores usan tecnología de punta para que puedas disfrutar de un producto veloz y duradero.",
+            "price": 850.99,
+            "image": "https://i.ibb.co/zN7VXmg/image-3.jpg"
         },
         {
             "id": 4,
-            "name": "Producto",
-            "description": "Esta es la descripcion de un producto",
-            "price": 60,
-            "image": "assets/images/products/diversos/diversos_4.png"
+            "name": "Silla Gamer Profesional",
+            "description": "Juega sin límites. Diseñada para quienes pasan muchas horas frente a la computadora. El asiento y el respaldo se adaptan a tus diferentes posiciones a lo largo del juego. Disfruta sin descuidar las zonas lumbar, dorsal y cervical. Ergonómica y confiable. Es muy común que adoptes una mala postura al sentarte y eso sin duda trae una serie de patologías que repercuten directamente en tu bienestar. Esta silla ergonómica es la indicada para quienes pasan mucho tiempo frente al escritorio, ya sea por trabajo o estudio, ya que su diseño se adapta a las formas del cuerpo y garantiza un reparto de presiones equilibrado. Crea un ambiente de trabajo sano y productivo.",
+            "price": 125.99,
+            "image": "https://i.ibb.co/gj4NCCP/image-4.jpg"
         },
         {
             "id": 5,
-            "name": "Producto",
-            "description": "Esta es la descripcion de un producto",
-            "price": 60,
-            "image": "assets/images/products/diversos/diversos_5.png"
+            "name": "Audifonos Gamer",
+            "description": "El formato perfecto para ti. El diseño over-ear genera una comodidad insuperable gracias a sus suaves almohadillas. Al mismo tiempo, su sonido envolvente del más alto nivel se convierte en el protagonista de la escena.",
+            "price": 99.99,
+            "image": "https://i.ibb.co/0y5Bn5v/image-5.jpg"
         },
         {
             "id": 6,
-            "name": "Producto",
-            "description": "Esta es la descripcion de un producto",
-            "price": 60,
-            "image": "assets/images/products/diversos/diversos_6.png"
+            "name": "Muñeco de accion Naruto",
+            "description": "Bandai es una de las mayores empresas representantes de la cultura animé en Japón. Con sus juguetes y figuras de acción es una de las preferidas por los más pequeños y por quienes se dedican a coleccionar. Juguetes articulados, al tener marcadas las articulaciones podrás manejar y acomodar tus figuras como más te guste. Con ellas, vas a poder crear historias en la que los personajes puedan movilizarse y cobrar vida.",
+            "price": 30.99,
+            "image": "https://i.ibb.co/V32d8jc/image-6.jpg"
         }
     ]
 }

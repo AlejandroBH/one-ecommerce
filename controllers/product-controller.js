@@ -7,7 +7,7 @@ const createCard = (name, price, image, id) => {
     <li><img class="card__image" src="${image}" alt="Imagen ${name}"></li>
     <li class="card__name">${name}</li>
     <li class="card__price">$${price}</li>
-    <li><a class="card__view" href="screens/view_product.html?id=${id}">Ver Producto</a></li>
+    <li><a class="card__view" href="/screens/view_product.html?id=${id}">Ver Producto</a></li>
     `;
     card.innerHTML = contentCard;
     return card;

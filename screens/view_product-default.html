@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Geek</title>
+    <title>Producto XYZ - Alura Geek</title>
     <!-- Exportamos hojas de estilo -->
     <link rel="stylesheet" href="../assets/styles/normalize.css">
     <link rel="stylesheet" href="../assets/styles/base.css">
@@ -45,27 +45,67 @@
 
             <section class="viewProduct" data-viewProduct>
                 <div class="viewProduct__container">
-                    <img class="viewProduct__image" src="">
+                    <img class="viewProduct__image" src="../assets/images/products/imagen_review.png">
                     <ul class="viewProduct__info">
-                        <li class="viewProduct__tittle"></li>
-                        <li class="viewProduct__price"></li>
-                        <li class="viewProduct__description"></li>
+                        <li class="viewProduct__tittle">Producto XYZ</li>
+                        <li class="viewProduct__price">$999</li>
+                        <li class="viewProduct__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolore ducimus cum. Voluptates suscipit ipsam nam voluptas nulla. Necessitatibus earum reprehenderit, fugit tenetur a voluptas. Ipsum, reiciendis quae. Totam, voluptatibus?</li>
                     </ul>
                 </div>
             </section>
 
             <section class="products">
                 <div class="products__container">
-
-                <!-- Productos: Ofertas -->
-                <div class="products__section" data-crudAjax>
-                    <div class="products__header">
-                        <h2 class="products__title">Ofertas</h2>
-                        <a class="products__viewAll" href="#">Ver todo<i class="products__imgArrow fa-solid fa-arrow-right"></i></a>
+                    <!-- Productos Similares -->
+                    <div class="products__section">
+                        <div class="products__header">
+                            <h2 class="products__title">Productos Similares</h2>
+                            <!-- <a class="products__viewAll" href="#">Ver todo<img class="products__imgArrow" src="assets/images/arrow_icon.svg"></a> -->
+                        </div>
+                        <div class="products__cards">
+                            <ul class="card">
+                                <li><img class="card__image" src="../assets/images/products/starwars/starwars_1.png" alt="Imagen producto"></li>
+                                <li class="card__name">Producto XYZ</li>
+                                <li class="card__price">$999</li>
+                                <li><a class="card__view" href="view_product-default.html">Ver Producto</a></li>
+                            </ul>
+    
+                            <ul class="card">
+                                <li><img class="card__image" src="../assets/images/products/starwars/starwars_2.png" alt="Imagen producto"></li>
+                                <li class="card__name">Producto XYZ</li>
+                                <li class="card__price">$999</li>
+                                <li><a class="card__view" href="view_product-default.html">Ver Producto</a></li>
+                            </ul>
+    
+                            <ul class="card">
+                                <li><img class="card__image" src="../assets/images/products/starwars/starwars_3.png" alt="Imagen producto"></li>
+                                <li class="card__name">Producto XYZ</li>
+                                <li class="card__price">$999</li>
+                                <li><a class="card__view" href="view_product-default.html">Ver Producto</a></li>
+                            </ul>
+    
+                            <ul class="card">
+                                <li><img class="card__image" src="../assets/images/products/starwars/starwars_4.png" alt="Imagen producto"></li>
+                                <li class="card__name">Producto XYZ</li>
+                                <li class="card__price">$999</li>
+                                <li><a class="card__view" href="view_product-default.html">Ver Producto</a></li>
+                            </ul>
+    
+                            <ul class="card">
+                                <li><img class="card__image" src="../assets/images/products/starwars/starwars_5.png" alt="Imagen producto"></li>
+                                <li class="card__name">Producto XYZ</li>
+                                <li class="card__price">$999</li>
+                                <li><a class="card__view" href="view_product-default.html">Ver Producto</a></li>
+                            </ul>
+    
+                            <ul class="card">
+                                <li><img class="card__image" src="../assets/images/products/starwars/starwars_6.png" alt="Imagen producto"></li>
+                                <li class="card__name">Producto XYZ</li>
+                                <li class="card__price">$999</li>
+                                <li><a class="card__view" href="view_product-default.html">Ver Producto</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="products__cards" data-products>
-                    </div>
-                </div>
 
                 </div>
             </section>
@@ -109,9 +149,6 @@
         </footer>
 
     </main>
-    <script type="module" src="../controllers/viewProduct-controller.js"></script>
-    <script type="module" src="../controllers/product-controller.js"></script>
-
 </body>
 
 </html>

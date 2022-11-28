@@ -11,6 +11,13 @@
     width: var(--container-size);
 }
 
+.viewProduct__image {
+    max-width: 560px;
+    max-height: 403px;
+    object-fit: cover;
+    width: 100%;
+}
+
 .viewProduct__info {
     border: 1px solid var(--selected-container);
     display: flex;
