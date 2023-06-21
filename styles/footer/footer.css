@@ -125,7 +125,7 @@
 @media screen and (max-width: 1024px) {
   .footer__container {
     padding: 32px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
   }
   .footer__container__logo {
     margin-bottom: 26px;
@@ -160,7 +160,7 @@
 @media screen and (max-width: 767px) {
   .footer__container {
     padding: 16px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
   }
 }
 @media screen and (max-width: 600px) {
