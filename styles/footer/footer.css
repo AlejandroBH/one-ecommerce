@@ -151,6 +151,9 @@
     height: 40px;
     font-size: 14px;
   }
+  .footer__copyright {
+    padding: 16px;
+  }
 }
 @media screen and (max-width: 600px) {
   .footer__container {
@@ -173,5 +176,21 @@
     width: 133px;
     height: 40px;
     font-size: 14px;
+  }
+  .footer__copyright {
+    padding: 16px;
+  }
+  .footer__copyright__autor {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .footer__copyright__date {
+    font-size: 12px;
+  }
+  .footer__copyright__networks {
+    margin-top: 12px;
+  }
+  .footer__copyright__networks__icon {
+    width: 25px;
   }
 }/*# sourceMappingURL=footer.css.map */

@@ -175,6 +175,10 @@
                 }
             }
         }
+
+        &__copyright {
+            padding: 16px;
+        }
     }
 }
 
@@ -202,6 +206,27 @@
                     width: 133px;
                     height: 40px;
                     font-size: 14px;
+                }
+            }
+        }
+
+        &__copyright {
+            padding: 16px;
+
+            &__autor {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            &__date {
+                font-size: 12px;
+            }
+
+            &__networks {
+                margin-top: 12px;
+
+                &__icon {
+                    width: 25px;
                 }
             }
         }
