@@ -1,0 +1,96 @@
+.hero {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url('../../assets/images/hero.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+
+    &__container {
+        max-width: var(--max-width);
+        margin: auto;
+        height: 352px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 32px 8px;
+
+        &__title {
+            color: #FFFFFF;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            font-size: 52px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        &__subtitle {
+            color: #FFFFFF;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        &__button {
+            background: var(--primary);
+            color: #FFFFFF;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Raleway';
+            font-weight: 400;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 129px;
+            height: 51px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background: var(--primary-hover);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        &__container {
+            padding: 32px;
+
+            &__button {
+                font-size: 14px;
+                width: 118px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        &__container {
+            padding: 16px;
+            height: 192px;
+
+            &__title {
+                font-size: 22px;
+                margin-bottom: 8px;
+            }
+
+            &__subtitle {
+                font-size: 14px;
+                margin-bottom: 8px;
+                font-weight: 600;
+            }
+
+            &__button {
+                font-size: 14px;
+                width: 118px;
+                height: 40px;
+            }
+        }
+    }
+}

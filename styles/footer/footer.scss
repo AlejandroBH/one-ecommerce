@@ -1,0 +1,209 @@
+.footer {
+    background: var(--secondary);
+    margin-top: 64px;
+
+    &__container {
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 64px 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 560px;
+
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 234px;
+
+            &__link {
+                font-size: 16px;
+                font-weight: 500;
+                color: #464646;
+                text-decoration: none;
+            }
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &__title {
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                background: #FFFFFF;
+                padding: 8px 12px;
+                border-radius: 4px;
+                width: 100%;
+                height: 56px;
+                border-bottom: 1px solid #C8C8C8;
+
+                &__label {
+                    color: #A2A2A2;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+
+                &__input {
+                    color: #464646;
+                    font-size: 16px;
+                    font-weight: 400;
+                    background: transparent;
+                    border: none;
+                    font-family: 'Raleway';
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+            }
+
+            &__textarea {
+                background: #FFFFFF;
+                padding: 16px 12px;
+                color: #464646;
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 4px;
+                width: 100%;
+                height: 82px;
+                border: none;
+                resize: none;
+                font-family: 'Raleway';
+                border-bottom: 1px solid #C8C8C8;
+
+                &:focus-visible {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: #A2A2A2;
+                }
+            }
+
+            &__button {
+                background: var(--primary);
+                font-family: 'Raleway';
+                color: #FFFFFF;
+                font-size: 16px;
+                font-weight: 400;
+                width: 144px;
+                height: 51px;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background: var(--primary-hover);
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 0px;
+
+        &__autor {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        &__date {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        &__networks {
+            margin-top: 16px;
+
+            &__icon {
+                width: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        &__container {
+            padding: 32px;
+            grid-template-columns: 1fr 1fr;
+
+            &__logo {
+                margin-bottom: 26px;
+                grid-column: 1 / 2;
+            }
+
+            &__nav {
+                grid-column: 1 / 2;
+            }
+
+            &__form {
+                grid-column: 2 / 3;
+                grid-row: 1 / 3;
+                justify-content: flex-start;
+
+                &__title {
+                    margin-bottom: 8px;
+                }
+
+                &__item {
+                    margin-bottom: 16px;
+                }
+
+                &__textarea {
+                    margin-bottom: 8px;
+                }
+
+                &__button {
+                    width: 133px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        &__container {
+            padding: 16px;
+            grid-template-columns: 1fr;
+
+            &__logo {
+                margin: 0px auto 26px;
+            }
+
+            &__nav {
+                margin: 0;
+                align-items: center;
+                margin-bottom: 32px;
+            }
+
+            &__form {
+                grid-column: 1 / 3;
+                grid-row: 3 / 4;
+
+                &__button {
+                    width: 133px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

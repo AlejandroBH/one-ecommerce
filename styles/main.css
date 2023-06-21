@@ -1,0 +1,31 @@
+@import 'header/header.css';
+@import 'hero/hero.css';
+@import 'products/products.css';
+@import 'footer/footer.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F5F5F5;
+  color: #464646;
+  font-family: "Raleway";
+}
+
+:root {
+  --max-width: 1144px;
+  --primary: #2A7AE4;
+  --primary-hover: #1f6bce;
+  --secondary: #EAF2FD;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../assets/fonts/Raleway.ttf);
+}
+@font-face {
+  font-family: "Raleway Italic";
+  src: url(../assets/fonts/Raleway-Italic.ttf);
+}/*# sourceMappingURL=main.css.map */
