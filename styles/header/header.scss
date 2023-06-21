@@ -60,6 +60,7 @@
             align-items: center;
             transition: 0.3s;
             grid-column: 4 / 5;
+            text-decoration: none;
 
             &:hover {
                 background: var(--primary);
@@ -97,7 +98,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .header {
         &__container {
             padding: 0px 16px;
@@ -127,17 +128,18 @@
 
                 span {
                     display: flex;
+                    justify-content: flex-end;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 359px) {
     .header {
         &__container {
             &__button {
-                grid-column: 2 / 3;
+                grid-column: 3 / 4;
                 width: 112px;
             }
 

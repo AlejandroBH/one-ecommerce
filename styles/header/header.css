@@ -57,6 +57,7 @@
   align-items: center;
   transition: 0.3s;
   grid-column: 4/5;
+  text-decoration: none;
 }
 .header__container__button:hover {
   background: var(--primary);
@@ -84,7 +85,7 @@
     font-size: 14px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header__container {
     padding: 0px 16px;
     height: 72px;
@@ -110,11 +111,12 @@
   }
   .header__container__search-icon span {
     display: flex;
+    justify-content: flex-end;
   }
 }
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 359px) {
   .header__container__button {
-    grid-column: 2/3;
+    grid-column: 3/4;
     width: 112px;
   }
   .header__container__search-icon {

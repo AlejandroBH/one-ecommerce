@@ -60,7 +60,7 @@
     height: 40px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero__container {
     padding: 16px;
     height: 192px;

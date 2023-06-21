@@ -1,6 +1,5 @@
 .footer {
     background: var(--secondary);
-    margin-top: 64px;
 
     &__container {
         max-width: var(--max-width);
@@ -8,6 +7,10 @@
         padding: 64px 8px;
         display: grid;
         grid-template-columns: 1fr 1fr 560px;
+
+        &__logo {
+            cursor: pointer;
+        }
 
         &__nav {
             display: flex;
@@ -178,6 +181,15 @@
 
         &__copyright {
             padding: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        &__container {
+            padding: 16px;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }

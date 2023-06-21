@@ -1,7 +1,7 @@
 .products {
   max-width: var(--max-width);
   margin: auto;
-  padding: 0px 8px;
+  padding: 0px 8px 64px;
 }
 .products__header {
   display: flex;
@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 1024px) {
   .products {
-    padding: 0px;
+    padding: 0px 0px 32px;
   }
   .products__header {
     padding: 0px 32px;
@@ -88,7 +88,10 @@
     padding: 0px 32px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .products {
+    padding: 0px 0px 16px;
+  }
   .products__header {
     padding: 0px 16px;
     margin-top: 16px;
@@ -110,7 +113,7 @@
     font-size: 14px;
   }
 }
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
   .products__cards {
     grid-template-columns: repeat(3, 1fr);
   }
