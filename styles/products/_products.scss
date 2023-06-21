@@ -8,6 +8,7 @@
         justify-content: space-between;
         margin-bottom: 16px;
         margin-top: 64px;
+        align-items: center;
 
         &__title {
             font-size: 32px;
@@ -25,6 +26,7 @@
             align-items: center;
             cursor: pointer;
             transition: 0.3s;
+            text-decoration: none;
 
             &:hover {
                 color: var(--primary-hover);
@@ -49,6 +51,7 @@
                 background: #FFFFFF;
                 padding: 5px;
                 border-radius: 5px;
+                z-index: 1;
             }
 
             &__image {

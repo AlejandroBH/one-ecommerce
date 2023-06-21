@@ -23,6 +23,11 @@
                 font-weight: 500;
                 color: #464646;
                 text-decoration: none;
+                transition: 0.3s;
+
+                &:hover {
+                    transform: translateX(5px);
+                }
             }
         }
 
