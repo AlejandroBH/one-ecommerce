@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon">
-    <title>Ingresar - Alura Geek</title>
+    <title>Actualizar Producto - Alura Geek</title>
 </head>
 <body>
 
@@ -17,21 +17,41 @@
                 <input class="header__container__search__input" type="text" placeholder="¿Qué deseas buscar?">
                 <span class="material-symbols-outlined header__container__search__icon">search</span>
             </div>
-            <!-- <a class="header__container__button" href="/">Login</a> -->
+            <a class="header__container__button" href="../pages/admin.html">Admin</a>
             <div class="header__container__search-icon">
                 <span class="material-symbols-outlined">search</span>
             </div>
         </div>
     </header>
 
-    <section class="login">
-        <form class="login__form">
-            <h5 class="login__form__title">Iniciar Sesión</h5>
-            <input class="login__form__input" type="text" placeholder="Escriba su correo electrónico">
-            <input class="login__form__input" type="text" placeholder="Escriba su contraseña">
-            <button class="login__form__button">Entrar</button>
-        </form>
+    <section class="add-product">
+        <form class="add-product__form">
+            <h5 class="add-product__form__title">Actualizar producto</h5>
 
+            <div class="add-product__form__item">
+                <label class="add-product__form__item__label" for="image-product">URL de imagen</label>
+                <input class="add-product__form__item__input" id="image-product" type="text">
+            </div>
+
+            <div class="add-product__form__item">
+                <label class="add-product__form__item__label" for="category-product">Categoría</label>
+                <input class="add-product__form__item__input" id="category-product" type="text">
+            </div>
+
+            <div class="add-product__form__item">
+                <label class="add-product__form__item__label" for="name-product">Nombre del producto</label>
+                <input class="add-product__form__item__input" id="name-product" type="text">
+            </div>
+
+            <div class="add-product__form__item">
+                <label class="add-product__form__item__label" for="price-product">Precio del producto</label>
+                <input class="add-product__form__item__input" id="price-product" type="text">
+            </div>
+
+            <textarea class="add-product__form__textarea" id="description-product" placeholder="Descripción del producto"></textarea>
+            <button class="add-product__form__button">Guardar Cambios</button>
+
+        </form>
     </section>
 
     <footer class="footer">
