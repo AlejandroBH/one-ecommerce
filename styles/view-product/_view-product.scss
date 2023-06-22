@@ -35,14 +35,10 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .view-product {
         padding: 32px;
-        grid-template-columns: 254px auto;
-
-        &__image {
-            max-height: 157px;
-        }
+        grid-template-columns: 1fr 1fr;
 
         &__info {
             &__title {
@@ -56,14 +52,10 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 767px) {
     .view-product {
         padding: 0;
         grid-template-columns: 1fr;
-
-        &__image {
-            max-height: 192px;
-        }
 
         &__info {
             padding: 16px;

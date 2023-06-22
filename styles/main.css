@@ -901,13 +901,10 @@
   font-family: "Raleway";
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .view-product {
     padding: 32px;
-    grid-template-columns: 254px auto;
-  }
-  .view-product__image {
-    max-height: 157px;
+    grid-template-columns: 1fr 1fr;
   }
   .view-product__info__title {
     font-size: 22px;
@@ -916,13 +913,10 @@
     font-size: 14px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 767px) {
   .view-product {
     padding: 0;
     grid-template-columns: 1fr;
-  }
-  .view-product__image {
-    max-height: 192px;
   }
   .view-product__info {
     padding: 16px;
