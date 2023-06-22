@@ -9,7 +9,6 @@
     <title>Actualizar Producto - Alura Geek</title>
 </head>
 <body>
-
     <header class="header">
         <div class="header__container">
             <a href="../index.html"><img class="header__container__logo" src="../assets/images/logo.svg" alt="Alura Geek"></a>
@@ -23,37 +22,32 @@
             </div>
         </div>
     </header>
-
     <section class="add-product">
         <form class="add-product__form">
             <h5 class="add-product__form__title">Actualizar producto</h5>
-
-            <div class="add-product__form__item">
-                <label class="add-product__form__item__label" for="image-product">URL de imagen</label>
-                <input class="add-product__form__item__input" id="image-product" type="text">
+            <div class="form-floating">
+                <input class="form-control" id="image-product" type="text" placeholder="URL de imagen" required>
+                <label class="form-label" for="image-product">URL de imagen</label>
             </div>
-
-            <div class="add-product__form__item">
-                <label class="add-product__form__item__label" for="category-product">Categoría</label>
-                <input class="add-product__form__item__input" id="category-product" type="text">
+            <div class="form-floating">
+                <input class="form-control" id="category-product" type="text" placeholder="Categoría" required>
+                <label class="form-label" for="category-product">Categoría</label>
             </div>
-
-            <div class="add-product__form__item">
-                <label class="add-product__form__item__label" for="name-product">Nombre del producto</label>
-                <input class="add-product__form__item__input" id="name-product" type="text">
+            <div class="form-floating">
+                <input class="form-control" id="name-product" type="text" placeholder="Nombre del producto" required>
+                <label class="form-label" for="name-product">Nombre del producto</label>
             </div>
-
-            <div class="add-product__form__item">
-                <label class="add-product__form__item__label" for="price-product">Precio del producto</label>
-                <input class="add-product__form__item__input" id="price-product" type="text">
+            <div class="form-floating">
+                <input class="form-control" id="price-product" type="text" placeholder="Nombre del producto" required>
+                <label class="form-label" for="price-product">Precio del producto</label>
             </div>
-
-            <textarea class="add-product__form__textarea" id="description-product" placeholder="Descripción del producto"></textarea>
-            <button class="add-product__form__button">Guardar Cambios</button>
-
+            <div class="form-floating">
+                <textarea class="form-control" id="description-product" type="text" placeholder="Descripción del producto" required></textarea>
+                <label class="form-label" for="description-product">Descripción del producto</label>
+            </div>
+            <button class="add-product__form__button">Guardar cambios</button>
         </form>
     </section>
-
     <footer class="footer">
         <div class="footer__container">
             <a class="footer__container__logo" href="../index.html"><img src="../assets/images/logo.svg" alt="Alura Geek"></a>
@@ -67,15 +61,17 @@
             </nav>
             <form class="footer__container__form">
                 <h5 class="footer__container__form__title">Hable con nosotros</h5>
-                <div class="footer__container__form__item">
-                    <label class="footer__container__form__item__label" for="name">Nombre</label>
-                    <input class="footer__container__form__item__input" id="name" type="text">
+                <div class="form-floating">
+                    <input class="form-control" id="footer-name" type="text" placeholder="Nombre" required>
+                    <label class="form-label" for="footer-name">Nombre</label>
                 </div>
-                <textarea class="footer__container__form__textarea" id="message" placeholder="Escribe tu mensaje"></textarea>
+                <div class="form-floating">
+                    <textarea class="form-control" id="footer-message" type="text" placeholder="Escribe tu mensaje" required></textarea>
+                    <label class="form-label" for="footer-message">Escribe tu mensaje</label>
+                </div>
                 <button class="footer__container__form__button">Enviar mensaje</button>
             </form>
         </div>
-
         <div class="footer__copyright">
             <p class="footer__copyright__autor">Desarrollado por A. Barrera</p>
             <p class="footer__copyright__date">Oracle Next Education G3 - 2022</p>
@@ -85,6 +81,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

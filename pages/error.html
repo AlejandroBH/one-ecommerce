@@ -9,7 +9,6 @@
     <title>Error - Alura Geek</title>
 </head>
 <body>
-
     <header class="header">
         <div class="header__container">
             <a href="../index.html"><img class="header__container__logo" src="../assets/images/logo.svg" alt="Alura Geek"></a>
@@ -23,14 +22,12 @@
             </div>
         </div>
     </header>
-
     <section class="error">
         <span class="material-symbols-outlined error__icon">sentiment_dissatisfied</span>
         <h2 class="error__title">404 Not Found</h2>
         <h5 class="error__subtitle">La página visitada no fue encontrada.</h5>
         <a href="../index.html" class="error__button">Volver a inicio</a>
     </section>
-
     <footer class="footer">
         <div class="footer__container">
             <a class="footer__container__logo" href="../index.html"><img src="../assets/images/logo.svg" alt="Alura Geek"></a>
@@ -44,15 +41,17 @@
             </nav>
             <form class="footer__container__form">
                 <h5 class="footer__container__form__title">Hable con nosotros</h5>
-                <div class="footer__container__form__item">
-                    <label class="footer__container__form__item__label" for="name">Nombre</label>
-                    <input class="footer__container__form__item__input" id="name" type="text">
+                <div class="form-floating">
+                    <input class="form-control" id="footer-name" type="text" placeholder="Nombre" required>
+                    <label class="form-label" for="footer-name">Nombre</label>
                 </div>
-                <textarea class="footer__container__form__textarea" id="message" placeholder="Escribe tu mensaje"></textarea>
+                <div class="form-floating">
+                    <textarea class="form-control" id="footer-message" type="text" placeholder="Escribe tu mensaje" required></textarea>
+                    <label class="form-label" for="footer-message">Escribe tu mensaje</label>
+                </div>
                 <button class="footer__container__form__button">Enviar mensaje</button>
             </form>
         </div>
-
         <div class="footer__copyright">
             <p class="footer__copyright__autor">Desarrollado por A. Barrera</p>
             <p class="footer__copyright__date">Oracle Next Education G3 - 2022</p>
@@ -62,6 +61,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

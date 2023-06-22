@@ -1,0 +1,27 @@
+.form {
+    &-floating {
+        width: 100%;
+        margin-bottom: 16px;
+
+        textarea {
+            height: 82px !important;
+            resize: none;
+        }
+    }
+
+    &-label {
+        color: #a2a2a2;
+        width: 100%;
+    }
+
+    &-control {
+        border: none;
+        border-radius: 4px;
+        border-bottom: 1px solid #c8c8c8;
+
+        &:focus {
+            box-shadow: none;
+            border-bottom: 1px solid #c8c8c8;
+        }
+    }
+}

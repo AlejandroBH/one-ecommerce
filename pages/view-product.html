@@ -9,7 +9,6 @@
     <title>Ver Producto - Alura Geek</title>
 </head>
 <body>
-
     <header class="header">
         <div class="header__container">
             <a href="../index.html"><img class="header__container__logo" src="../assets/images/logo.svg" alt="Alura Geek"></a>
@@ -23,7 +22,6 @@
             </div>
         </div>
     </header>
-
     <section class="view-product">
         <img class="view-product__image" src="../assets/images/product-view.png" alt="product 1">
         <div class="view-product__info">
@@ -32,14 +30,11 @@
             <p class="view-product__info__description">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</p>
         </div>
     </section>
-
     <section class="products">
         <div class="products__header">
             <h3 class="products__header__title">Productos similares</h3>
         </div>
-
         <div class="products__cards">
-
             <div class="products__cards__item">
                 <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-1.png" alt="card 1">
                 <h5 class="products__cards__item__name">Producto XYZ</h5>
@@ -76,10 +71,8 @@
                 <h5 class="products__cards__item__price">$ 60,00</h5>
                 <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
             </div>
-
         </div>
     </section>
-
     <footer class="footer">
         <div class="footer__container">
             <a class="footer__container__logo" href="../index.html"><img src="../assets/images/logo.svg" alt="Alura Geek"></a>
@@ -93,15 +86,17 @@
             </nav>
             <form class="footer__container__form">
                 <h5 class="footer__container__form__title">Hable con nosotros</h5>
-                <div class="footer__container__form__item">
-                    <label class="footer__container__form__item__label" for="name">Nombre</label>
-                    <input class="footer__container__form__item__input" id="name" type="text">
+                <div class="form-floating">
+                    <input class="form-control" id="footer-name" type="text" placeholder="Nombre" required>
+                    <label class="form-label" for="footer-name">Nombre</label>
                 </div>
-                <textarea class="footer__container__form__textarea" id="message" placeholder="Escribe tu mensaje"></textarea>
+                <div class="form-floating">
+                    <textarea class="form-control" id="footer-message" type="text" placeholder="Escribe tu mensaje" required></textarea>
+                    <label class="form-label" for="footer-message">Escribe tu mensaje</label>
+                </div>
                 <button class="footer__container__form__button">Enviar mensaje</button>
             </form>
         </div>
-
         <div class="footer__copyright">
             <p class="footer__copyright__autor">Desarrollado por A. Barrera</p>
             <p class="footer__copyright__date">Oracle Next Education G3 - 2022</p>
@@ -111,6 +106,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

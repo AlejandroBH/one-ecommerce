@@ -1,4 +1,4 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'component/header';
 @import 'component/hero';
 @import 'component/products';
@@ -8,6 +8,7 @@
 @import 'component/add-product';
 @import 'component/view-product';
 @import 'component/error';
+@import 'component/form';
 
 * {
     margin: 0;
@@ -19,6 +20,10 @@ body {
     background: #F5F5F5;
     color: #464646;
     font-family: 'Raleway';
+}
+
+p {
+    margin: 0;
 }
 
 :root {
@@ -36,32 +41,4 @@ body {
 @font-face {
     font-family: 'Raleway Italic';
     src: url(../fonts/Raleway-Italic.ttf);
-}
-
-.form {
-    &-floating {
-        width: 100%;
-        margin-bottom: 16px;
-
-        textarea {
-            height: 82px !important;
-            resize: none;
-        }
-    }
-
-    &-label {
-        color: #a2a2a2;
-        width: 100%;
-    }
-
-    &-control {
-        border: none;
-        border-radius: 4px;
-        border-bottom: 1px solid #c8c8c8;
-
-        &:focus {
-            box-shadow: none;
-            border-bottom: 1px solid #c8c8c8;
-        }
-    }
 }
