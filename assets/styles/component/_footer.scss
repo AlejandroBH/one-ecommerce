@@ -41,59 +41,59 @@
                 font-weight: 700;
             }
 
-            &__item {
-                display: flex;
-                flex-direction: column;
-                background: #FFFFFF;
-                padding: 8px 12px;
-                border-radius: 4px;
-                width: 100%;
-                height: 56px;
-                border-bottom: 1px solid #C8C8C8;
-                justify-content: space-between;
+            // &__item {
+            //     display: flex;
+            //     flex-direction: column;
+            //     background: #FFFFFF;
+            //     padding: 8px 12px;
+            //     border-radius: 4px;
+            //     width: 100%;
+            //     height: 56px;
+            //     border-bottom: 1px solid #C8C8C8;
+            //     justify-content: space-between;
 
-                &__label {
-                    color: #A2A2A2;
-                    font-size: 12px;
-                    font-weight: 400;
-                }
+            //     &__label {
+            //         color: #A2A2A2;
+            //         font-size: 12px;
+            //         font-weight: 400;
+            //     }
 
-                &__input {
-                    color: #464646;
-                    font-size: 16px;
-                    font-weight: 400;
-                    background: transparent;
-                    border: none;
-                    font-family: 'Raleway';
+            //     &__input {
+            //         color: #464646;
+            //         font-size: 16px;
+            //         font-weight: 400;
+            //         background: transparent;
+            //         border: none;
+            //         font-family: 'Raleway';
 
-                    &:focus-visible {
-                        outline: none;
-                    }
-                }
-            }
+            //         &:focus-visible {
+            //             outline: none;
+            //         }
+            //     }
+            // }
 
-            &__textarea {
-                background: #FFFFFF;
-                padding: 16px 12px;
-                color: #464646;
-                font-size: 16px;
-                font-weight: 400;
-                border-radius: 4px;
-                width: 100%;
-                height: 82px;
-                border: none;
-                resize: none;
-                font-family: 'Raleway';
-                border-bottom: 1px solid #C8C8C8;
+            // &__textarea {
+            //     background: #FFFFFF;
+            //     padding: 16px 12px;
+            //     color: #464646;
+            //     font-size: 16px;
+            //     font-weight: 400;
+            //     border-radius: 4px;
+            //     width: 100%;
+            //     height: 82px;
+            //     border: none;
+            //     resize: none;
+            //     font-family: 'Raleway';
+            //     border-bottom: 1px solid #C8C8C8;
 
-                &:focus-visible {
-                    outline: none;
-                }
+            //     &:focus-visible {
+            //         outline: none;
+            //     }
 
-                &::placeholder {
-                    color: #A2A2A2;
-                }
-            }
+            //     &::placeholder {
+            //         color: #A2A2A2;
+            //     }
+            // }
 
             &__button {
                 background: var(--primary);
@@ -169,13 +169,13 @@
                     margin-bottom: 8px;
                 }
 
-                &__item {
-                    margin-bottom: 16px;
-                }
+                // &__item {
+                //     margin-bottom: 16px;
+                // }
 
-                &__textarea {
-                    margin-bottom: 8px;
-                }
+                // &__textarea {
+                //     margin-bottom: 8px;
+                // }
 
                 &__button {
                     width: 133px;

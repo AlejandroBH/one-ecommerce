@@ -185,11 +185,19 @@
             </nav>
             <form class="footer__container__form">
                 <h5 class="footer__container__form__title">Hable con nosotros</h5>
-                <div class="footer__container__form__item">
+                <!-- <div class="footer__container__form__item">
                     <label class="footer__container__form__item__label" for="name">Nombre</label>
                     <input class="footer__container__form__item__input" id="name" type="text">
+                </div> -->
+                <div class="form-floating">
+                    <input class="form-control" id="footer-name" type="text" placeholder="Nombre" required>
+                    <label class="form-label" for="footer-name">Nombre</label>
                 </div>
-                <textarea class="footer__container__form__textarea" id="message" placeholder="Escribe tu mensaje"></textarea>
+                <!-- <textarea class="footer__container__form__textarea" id="message" placeholder="Escribe tu mensaje"></textarea> -->
+                <div class="form-floating">
+                    <textarea class="form-control" id="footer-message" type="text" placeholder="Escribe tu mensaje" required></textarea>
+                    <label class="form-label" for="footer-message">Escribe tu mensaje</label>
+                </div>
                 <button class="footer__container__form__button">Enviar mensaje</button>
             </form>
         </div>

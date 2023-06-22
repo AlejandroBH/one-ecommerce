@@ -15,20 +15,26 @@
             margin-bottom: 25px;
         }
 
-        &__input {
-            padding: 18px 12px;
-            width: 100%;
-            margin-bottom: 25px;
-            border-radius: 4px;
-            border: none;
-            font-family: 'Raleway';
-            font-weight: 400;
-            font-size: 16px;
-            border-bottom: 1px solid #C8C8C8;
-            height: 63px;
+        // &__input {
+        //     padding: 18px 12px;
+        //     width: 100%;
+        //     margin-bottom: 25px;
+        //     border-radius: 4px;
+        //     border: none;
+        //     font-family: 'Raleway';
+        //     font-weight: 400;
+        //     font-size: 16px;
+        //     border-bottom: 1px solid #C8C8C8;
+        //     height: 63px;
 
-            &:focus-visible {
-                outline: none;
+        //     &:focus-visible {
+        //         outline: none;
+        //     }
+        // }
+
+        .form {
+            &-floating {
+                margin-bottom: 24px !important;
             }
         }
 
@@ -63,8 +69,14 @@
         &__form {
             width: 275px;
 
-            &__input {
-                height: 41px;
+            // &__input {
+            //     height: 41px;
+            // }
+
+            .form {
+                &-floating {
+                    margin-bottom: 16px !important;
+                }
             }
 
             &__button {
@@ -78,10 +90,12 @@
 
 @media screen and (max-width: 767px) {
     .login {
-        &__form {
-            &__input {
-                font-size: 14px;
-            }
-        }
+        padding: 45px 16px;
+
+        // &__form {
+        //     &__input {
+        //         font-size: 14px;
+        //     }
+        // }
     }
 }
