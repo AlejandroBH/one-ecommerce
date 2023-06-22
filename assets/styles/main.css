@@ -1022,9 +1022,9 @@ body {
 
 @font-face {
   font-family: "Raleway";
-  src: url(../assets/fonts/Raleway.ttf);
+  src: url(../fonts/Raleway.ttf);
 }
 @font-face {
   font-family: "Raleway Italic";
-  src: url(../assets/fonts/Raleway-Italic.ttf);
+  src: url(../fonts/Raleway-Italic.ttf);
 }/*# sourceMappingURL=main.css.map */

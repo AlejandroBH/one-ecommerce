@@ -1,12 +1,12 @@
-@import 'header/header';
-@import 'hero/hero';
-@import 'products/products';
-@import 'footer/footer';
-@import 'login/login';
-@import 'admin/admin';
-@import 'add-product/add-product';
-@import 'view-product/view-product';
-@import 'error/error';
+@import 'component/header';
+@import 'component/hero';
+@import 'component/products';
+@import 'component/footer';
+@import 'component/login';
+@import 'component/admin';
+@import 'component/add-product';
+@import 'component/view-product';
+@import 'component/error';
 
 * {
     margin: 0;
@@ -29,10 +29,10 @@ body {
 
 @font-face {
     font-family: 'Raleway';
-    src: url(../assets/fonts/Raleway.ttf);
+    src: url(../fonts/Raleway.ttf);
 }
 
 @font-face {
     font-family: 'Raleway Italic';
-    src: url(../assets/fonts/Raleway-Italic.ttf);
+    src: url(../fonts/Raleway-Italic.ttf);
 }
