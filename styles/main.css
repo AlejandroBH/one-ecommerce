@@ -297,6 +297,9 @@
   cursor: pointer;
   text-decoration: none;
 }
+.products__cards--gap {
+  gap: 64px 16px;
+}
 
 @media screen and (max-width: 1024px) {
   .products {
@@ -312,6 +315,9 @@
   .products__cards {
     grid-template-columns: repeat(4, 1fr);
     padding: 0px 32px;
+  }
+  .products__cards--gap {
+    gap: 16px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -337,6 +343,9 @@
   }
   .products__cards__item__button {
     font-size: 14px;
+  }
+  .products__cards--gap {
+    gap: 16px;
   }
 }
 @media screen and (min-width: 425px) and (max-width: 767px) {
