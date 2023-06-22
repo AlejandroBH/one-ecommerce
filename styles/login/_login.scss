@@ -75,3 +75,13 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .login {
+        &__form {
+            &__input {
+                font-size: 14px;
+            }
+        }
+    }
+}

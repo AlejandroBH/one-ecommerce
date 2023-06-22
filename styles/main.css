@@ -630,6 +630,11 @@
     font-size: 14px;
   }
 }
+@media screen and (max-width: 767px) {
+  .login__form__input {
+    font-size: 14px;
+  }
+}
 .admin {
   max-width: var(--max-width);
   margin: auto;
