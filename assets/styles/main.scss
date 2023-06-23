@@ -34,6 +34,32 @@ p {
     --secondary: #EAF2FD;
 }
 
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar:horizontal {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
 @font-face {
     font-family: 'Raleway';
     src: url(../fonts/Raleway.ttf);

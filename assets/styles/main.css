@@ -2494,6 +2494,8 @@ textarea.form-control-lg {
 .view-product__info__description {
   font-size: 16px;
   font-family: "Raleway";
+  max-height: 250px;
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2506,6 +2508,7 @@ textarea.form-control-lg {
   }
   .view-product__info__description {
     font-size: 14px;
+    max-height: 175px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2513,8 +2516,17 @@ textarea.form-control-lg {
     padding: 0;
     grid-template-columns: 1fr;
   }
+  .view-product__image {
+    max-width: 556px;
+    margin: auto;
+  }
   .view-product__info {
     padding: 16px;
+    max-width: 572px;
+    margin: auto;
+  }
+  .view-product__info__description {
+    max-height: 250px;
   }
 }
 .error {
@@ -2631,6 +2643,32 @@ p {
   --primary: #2A7AE4;
   --primary-hover: #1f6bce;
   --secondary: #EAF2FD;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 5px;
+}
+
+::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar:horizontal {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 
 @font-face {
