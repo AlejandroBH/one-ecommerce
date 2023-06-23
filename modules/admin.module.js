@@ -1,24 +1,28 @@
 "use strict";
 
-import { adminCards } from "../script/app.js";
+import { createCardAdmin } from "../controllers/create-card.controller.js";
 import { getProducts } from "../services/product.service.js";
 
 getProducts().then(data => {
   for (let item of data) {
-    const template = `
-    <div class="admin__cards__item">
-      <div class="admin__cards__item__image">
-          <div class="admin__cards__item__image__controls">
-              <span class="material-symbols-outlined">delete</span>
-              <span class="material-symbols-outlined">edit</span>
-          </div>
-          <img src="${item.image}" alt="${item.name}">
-      </div>
-      <h5 class="admin__cards__item__name">${item.name}</h5>
-      <h5 class="admin__cards__item__price">$ ${item.price}</h5>
-      <h5 class="admin__cards__item__id">#${item.id}</h5>
-    </div>
-    `;
-    adminCards.innerHTML += template;
+    createCardAdmin(item);
   }
+
+  const cardUpd = document.querySelectorAll('[data-card-udp]');
+  const cardDel = document.querySelectorAll('[data-card-del]');
+
+  cardUpd.forEach((item) => {
+    item.addEventListener('click', () => {
+      const attr = item.getAttribute('data-card-udp');
+      location.href = `upd-product.html?id=${attr}`;
+    });
+  });
+
+  cardDel.forEach((item) => {
+    item.addEventListener('click', () => {
+      const attr = item.getAttribute('data-card-del');
+      // TODO (crear funcion para eliminar)
+      alert('Eliminar ID='+ attr);
+    });
+  });
 });

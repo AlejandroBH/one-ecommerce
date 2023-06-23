@@ -10,6 +10,13 @@ export const viewProductInfoTitle = document.querySelector('.view-product__info_
 export const viewProductInfoPrice = document.querySelector('.view-product__info__price');
 export const viewProductInfoDescription = document.querySelector('.view-product__info__description');
 
+export const addProductImage = document.querySelector('#image-product');
+export const addProductCategory = document.querySelector('#category-product');
+export const addProductName = document.querySelector('#name-product');
+export const addProductPrice = document.querySelector('#price-product');
+export const addProductDescription = document.querySelector('#description-product');
+
+export const titleApp = 'Alura Geek';
 export const url = "http://localhost:3000";
 
 validateForms();

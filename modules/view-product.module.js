@@ -1,6 +1,6 @@
 "use strict";
 
-import { viewProductImage, viewProductInfoDescription, viewProductInfoPrice, viewProductInfoTitle } from "../script/app.js";
+import { titleApp, viewProductImage, viewProductInfoDescription, viewProductInfoPrice, viewProductInfoTitle } from "../script/app.js";
 import { getParamByUrl, getProductById } from "../services/product.service.js";
 
 const productId = getParamByUrl('id');
@@ -12,6 +12,7 @@ if (location.search === '') {
     if (data.name === undefined) {
       location.href = '../pages/error.html';
     } else {
+      document.title = `${data.name} - ${titleApp}`;
       viewProductImage.setAttribute('src', data.image);
       viewProductImage.setAttribute('alt', data.name);
       viewProductInfoTitle.textContent = data.name;

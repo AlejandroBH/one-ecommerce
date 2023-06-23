@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon">
     <script type="module" src="../script/app.js" async></script>
-    <title>Actualizar Producto - Alura Geek</title>
+    <script type="module" src="../modules/udp-product.module.js"></script>
+    <title>Alura Geek</title>
 </head>
 <body>
     <header class="header">
@@ -27,7 +28,7 @@
         <form class="add-product__form needs-validation" novalidate>
             <h5 class="add-product__form__title">Actualizar producto</h5>
             <div class="form-floating">
-                <input class="form-control" id="image-product" type="url" placeholder="URL de imagen" required>
+                <input class="form-control" id="image-product" type="text" placeholder="URL de imagen" required>
                 <label class="form-label" for="image-product">URL de imagen</label>
                 <div class="valid-tooltip">Esta todo correcto.</div>
                 <div class="invalid-tooltip">Este campo no puede estar vacío.</div>
