@@ -1,5 +1,5 @@
 'use strict';
 
-import { validateForms } from "./validations.js";
+import { validateForms } from "../controllers/validation.controller.js";
 
 validateForms();
