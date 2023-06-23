@@ -24,27 +24,37 @@
         </div>
     </header>
     <section class="add-product">
-        <form class="add-product__form">
+        <form class="add-product__form needs-validation" novalidate>
             <h5 class="add-product__form__title">Actualizar producto</h5>
             <div class="form-floating">
-                <input class="form-control" id="image-product" type="text" placeholder="URL de imagen" required>
+                <input class="form-control" id="image-product" type="url" placeholder="URL de imagen" required>
                 <label class="form-label" for="image-product">URL de imagen</label>
+                <div class="valid-tooltip">Esta todo correcto.</div>
+                <div class="invalid-tooltip">Este campo no puede estar vacío.</div>
             </div>
             <div class="form-floating">
                 <input class="form-control" id="category-product" type="text" placeholder="Categoría" required>
                 <label class="form-label" for="category-product">Categoría</label>
+                <div class="valid-tooltip">Esta todo correcto.</div>
+                <div class="invalid-tooltip">Este campo no puede estar vacío.</div>
             </div>
             <div class="form-floating">
                 <input class="form-control" id="name-product" type="text" placeholder="Nombre del producto" required>
                 <label class="form-label" for="name-product">Nombre del producto</label>
+                <div class="valid-tooltip">Esta todo correcto.</div>
+                <div class="invalid-tooltip">Este campo no puede estar vacío.</div>
             </div>
             <div class="form-floating">
-                <input class="form-control" id="price-product" type="text" placeholder="Nombre del producto" required>
+                <input class="form-control" id="price-product" type="number" placeholder="Precio del producto" required>
                 <label class="form-label" for="price-product">Precio del producto</label>
+                <div class="valid-tooltip">Esta todo correcto.</div>
+                <div class="invalid-tooltip">Este campo no puede estar vacío.</div>
             </div>
             <div class="form-floating">
                 <textarea class="form-control" id="description-product" type="text" placeholder="Descripción del producto" required></textarea>
                 <label class="form-label" for="description-product">Descripción del producto</label>
+                <div class="valid-tooltip">Esta todo correcto.</div>
+                <div class="invalid-tooltip">Este campo no puede estar vacío.</div>
             </div>
             <button class="btn btn-primary">Guardar cambios</button>
         </form>
@@ -65,14 +75,14 @@
                 <div class="form-floating">
                     <input class="form-control" id="footer-name" type="text" placeholder="Nombre" required>
                     <label class="form-label" for="footer-name">Nombre</label>
-                    <div class="valid-feedback">Esta todo correcto.</div>
-                    <div class="invalid-feedback">Este campo no puede estar vacío.</div>
+                    <div class="valid-tooltip">Esta todo correcto.</div>
+                    <div class="invalid-tooltip">Este campo no puede estar vacío.</div>
                 </div>
                 <div class="form-floating">
                     <textarea class="form-control" id="footer-message" type="text" placeholder="Escribe tu mensaje" required></textarea>
                     <label class="form-label" for="footer-message">Escribe tu mensaje</label>
-                    <div class="valid-feedback">Esta todo correcto.</div>
-                    <div class="invalid-feedback">Este campo no puede estar vacío.</div>
+                    <div class="valid-tooltip">Esta todo correcto.</div>
+                    <div class="invalid-tooltip">Este campo no puede estar vacío.</div>
                 </div>
                 <button class="btn btn-primary">Enviar mensaje</button>
             </form>

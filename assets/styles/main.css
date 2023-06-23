@@ -2600,6 +2600,13 @@ textarea.form-control-lg {
   border-bottom: 1px solid #c8c8c8;
 }
 
+.invalid-tooltip,
+.valid-tooltip {
+  font-size: 12px;
+  margin-top: -15px;
+  right: 0;
+}
+
 .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
   transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
 }
@@ -2619,6 +2626,16 @@ textarea.form-control-lg {
 .was-validated .form-control:invalid:focus,
 .form-control.is-invalid:focus {
   box-shadow: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .btn {
