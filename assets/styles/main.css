@@ -2600,6 +2600,27 @@ textarea.form-control-lg {
   border-bottom: 1px solid #c8c8c8;
 }
 
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+  transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-select ~ label {
+  transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus {
+  box-shadow: none;
+}
+
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus {
+  box-shadow: none;
+}
+
 .btn {
   width: 182px;
   height: 51px;
