@@ -1,0 +1,383 @@
+<!-- START Product admin.html -->
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/star-war/card-img-1.png" alt="card 1">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/star-war/card-img-2.png" alt="card 2">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/star-war/card-img-3.png" alt="card 3">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/star-war/card-img-4.png" alt="card 4">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/star-war/card-img-5.png" alt="card 5">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/star-war/card-img-6.png" alt="card 6">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/consolas/card-img-1.png" alt="card 1">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/consolas/card-img-2.png" alt="card 2">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/consolas/card-img-3.png" alt="card 3">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/consolas/card-img-4.png" alt="card 4">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/consolas/card-img-5.png" alt="card 5">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/consolas/card-img-6.png" alt="card 6">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/diversos/card-img-1.png" alt="card 1">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/diversos/card-img-2.png" alt="card 2">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/diversos/card-img-3.png" alt="card 3">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/diversos/card-img-4.png" alt="card 4">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/diversos/card-img-5.png" alt="card 5">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+    <div class="admin__cards__item">
+        <div class="admin__cards__item__image">
+            <div class="admin__cards__item__image__controls">
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+            <img src="../assets/images/cards/diversos/card-img-6.png" alt="card 6">
+        </div>
+        <h5 class="admin__cards__item__name">Producto XYZ</h5>
+        <h5 class="admin__cards__item__price">$ 60,00</h5>
+        <h5 class="admin__cards__item__id">#1111111</h5>
+    </div>
+<!-- END Product admin.html -->
+
+<!-- START Product products.html -->
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-1.png" alt="card 1">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-2.png" alt="card 2">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-3.png" alt="card 3">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-4.png" alt="card 4">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-5.png" alt="card 5">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-6.png" alt="card 6">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/consolas/card-img-1.png" alt="card 1">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/consolas/card-img-2.png" alt="card 2">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/consolas/card-img-3.png" alt="card 3">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/consolas/card-img-4.png" alt="card 4">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/consolas/card-img-5.png" alt="card 5">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/consolas/card-img-6.png" alt="card 6">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/diversos/card-img-1.png" alt="card 1">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/diversos/card-img-2.png" alt="card 2">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/diversos/card-img-3.png" alt="card 3">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/diversos/card-img-4.png" alt="card 4">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/diversos/card-img-5.png" alt="card 5">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+    <div class="products__cards__item">
+        <img class="products__cards__item__image" src="../assets/images/cards/diversos/card-img-6.png" alt="card 6">
+        <h5 class="products__cards__item__name">Producto XYZ</h5>
+        <h5 class="products__cards__item__price">$ 60,00</h5>
+        <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+    </div>
+<!-- END Product products.html -->
+
+<!-- START Product view-product.html -->
+    <section class="view-product">
+        <img class="view-product__image" src="../assets/images/product-view.png" alt="product 1">
+        <div class="view-product__info">
+            <h2 class="view-product__info__title">Producto XYZ</h2>
+            <h5 class="view-product__info__price">$ 60,00</h5>
+            <p class="view-product__info__description">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</p>
+        </div>
+    </section>
+    <section class="products">
+        <div class="products__header">
+            <h3 class="products__header__title">Productos similares</h3>
+        </div>
+        <div class="products__cards">
+            <div class="products__cards__item">
+                <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-1.png" alt="card 1">
+                <h5 class="products__cards__item__name">Producto XYZ</h5>
+                <h5 class="products__cards__item__price">$ 60,00</h5>
+                <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+            </div>
+            <div class="products__cards__item">
+                <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-2.png" alt="card 2">
+                <h5 class="products__cards__item__name">Producto XYZ</h5>
+                <h5 class="products__cards__item__price">$ 60,00</h5>
+                <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+            </div>
+            <div class="products__cards__item">
+                <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-3.png" alt="card 3">
+                <h5 class="products__cards__item__name">Producto XYZ</h5>
+                <h5 class="products__cards__item__price">$ 60,00</h5>
+                <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+            </div>
+            <div class="products__cards__item">
+                <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-4.png" alt="card 4">
+                <h5 class="products__cards__item__name">Producto XYZ</h5>
+                <h5 class="products__cards__item__price">$ 60,00</h5>
+                <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+            </div>
+            <div class="products__cards__item">
+                <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-5.png" alt="card 5">
+                <h5 class="products__cards__item__name">Producto XYZ</h5>
+                <h5 class="products__cards__item__price">$ 60,00</h5>
+                <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+            </div>
+            <div class="products__cards__item">
+                <img class="products__cards__item__image" src="../assets/images/cards/star-war/card-img-6.png" alt="card 6">
+                <h5 class="products__cards__item__name">Producto XYZ</h5>
+                <h5 class="products__cards__item__price">$ 60,00</h5>
+                <a href="../pages/view-product.html" class="products__cards__item__button">Ver producto</a>
+            </div>
+        </div>
+    </section>
+<!-- END Product view-prodcut.html -->
