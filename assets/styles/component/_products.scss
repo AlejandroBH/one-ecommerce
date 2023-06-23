@@ -39,6 +39,10 @@
         grid-template-columns: repeat(6, 1fr);
         gap: 16px;
 
+        .item-limit:nth-child(n +7) {
+            display: none;
+        }
+
         &__item {
             display: flex;
             flex-direction: column;
@@ -107,6 +111,10 @@
             grid-template-columns: repeat(4, 1fr);
             padding: 0px 32px;
 
+            .item-limit:nth-child(n +5) {
+                display: none;
+            }
+
             &--gap {
                 gap: 16px;
             }
@@ -131,6 +139,10 @@
             grid-template-columns: repeat(2, 1fr);
             padding: 0px 16px;
 
+            .item-limit:nth-child(n +3) {
+                display: none;
+            }
+
             &__item {
                 margin-bottom: 16px;
 
@@ -150,6 +162,10 @@
     .products {
         &__cards {
             grid-template-columns: repeat(3, 1fr);
+
+            .item-limit:nth-child(3) {
+                display: block;
+            }
         }
     }
 }

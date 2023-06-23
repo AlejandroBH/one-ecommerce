@@ -2028,6 +2028,9 @@ textarea.form-control-lg {
   grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
+.products__cards .item-limit:nth-child(n+7) {
+  display: none;
+}
 .products__cards__item {
   display: flex;
   flex-direction: column;
@@ -2087,6 +2090,9 @@ textarea.form-control-lg {
     grid-template-columns: repeat(4, 1fr);
     padding: 0px 32px;
   }
+  .products__cards .item-limit:nth-child(n+5) {
+    display: none;
+  }
   .products__cards--gap {
     gap: 16px;
   }
@@ -2106,6 +2112,9 @@ textarea.form-control-lg {
     grid-template-columns: repeat(2, 1fr);
     padding: 0px 16px;
   }
+  .products__cards .item-limit:nth-child(n+3) {
+    display: none;
+  }
   .products__cards__item {
     margin-bottom: 16px;
   }
@@ -2119,6 +2128,9 @@ textarea.form-control-lg {
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .products__cards {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .products__cards .item-limit:nth-child(3) {
+    display: block;
   }
 }
 .footer {
