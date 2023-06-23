@@ -31,26 +31,9 @@
             margin-bottom: 16px;
         }
 
-        &__button {
-            background: var(--primary);
-            color: #FFFFFF;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            font-family: 'Raleway';
-            font-weight: 400;
-            cursor: pointer;
-            transition: 0.3s;
+        .btn {
             width: 129px;
             height: 51px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            &:hover {
-                background: var(--primary-hover);
-            }
         }
     }
 }
@@ -60,7 +43,7 @@
         &__container {
             padding: 32px;
 
-            &__button {
+            .btn {
                 font-size: 14px;
                 width: 118px;
                 height: 40px;
@@ -84,12 +67,6 @@
                 font-size: 14px;
                 margin-bottom: 8px;
                 font-weight: 600;
-            }
-
-            &__button {
-                font-size: 14px;
-                width: 118px;
-                height: 40px;
             }
         }
     }

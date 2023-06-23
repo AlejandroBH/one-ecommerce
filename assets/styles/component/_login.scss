@@ -21,26 +21,11 @@
             }
         }
 
-        &__button {
-            padding: 20px 0px;
+        .btn {
             width: 100%;
-            font-family: 'Raleway';
+            height: 62px;
             font-weight: 600;
             font-size: 18px;
-            color: #FFFFFF;
-            background: var(--primary);
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            height: 62px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: 0.3s;
-
-            &:hover {
-                background: var(--primary-hover);
-            }
         }
     }
 }
@@ -58,9 +43,9 @@
                 }
             }
 
-            &__button {
-                width: 109px;
-                height: 40px;
+            .btn {
+                width: 150px;
+                height: 45px;
                 font-size: 14px;
             }
         }

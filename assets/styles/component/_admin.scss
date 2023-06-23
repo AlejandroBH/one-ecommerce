@@ -15,26 +15,9 @@
             font-weight: 700;
         }
 
-        &__button {
-            background: var(--primary);
-            font-size: 16px;
-            font-weight: 400;
+        .btn {
             width: 163px;
             height: 51px;
-            border: none;
-            font-family: 'Raleway';
-            color: #FFFFFF;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-            text-decoration: none;
-
-            &:hover {
-                background: var(--primary-hover);
-            }
         }
     }
 
@@ -97,16 +80,6 @@
                 font-weight: 700;
                 margin-bottom: 8px;
             }
-
-            &__button {
-                font-size: 16px;
-                font-weight: 700;
-                color: var(--primary);
-                background: transparent;
-                font-family: 'Raleway';
-                border: none;
-                cursor: pointer;
-            }
         }
     }
 }
@@ -123,7 +96,7 @@
                 font-size: 22px;
             }
 
-            &__button {
+            .btn {
                 width: 150px;
                 height: 40px;
                 font-size: 14px;
@@ -152,22 +125,11 @@
             &__title {
                 font-size: 22px;
             }
-
-            &__button {
-                font-size: 14px;
-            }
         }
 
         &__cards {
             grid-template-columns: repeat(2, 1fr);
             padding: 0px 16px;
-
-            &__item {
-
-                &__button {
-                    font-size: 14px;
-                }
-            }
         }
     }
 }

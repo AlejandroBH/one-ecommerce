@@ -44,29 +44,6 @@
             }
         }
 
-        &__button {
-            color: var(--primary);
-            border: 1px solid var(--primary);
-            font-family: 'Raleway';
-            border-radius: 5px;
-            width: 182px;
-            height: 51px;
-            background: transparent;
-            font-size: 16px;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: 0.3s;
-            grid-column: 4 / 5;
-            text-decoration: none;
-
-            &:hover {
-                background: var(--primary);
-                color: #FFFFFF;
-            }
-        }
-
         &__search-icon {
             display: none;
         }
@@ -87,11 +64,15 @@
                 width: 272px;
             }
 
-            &__button {
-                width: 166px;
-                height: 40px;
-                font-weight: 600;
-                font-size: 14px;
+            .btn {
+                &-outline {
+                    &-primary {
+                        width: 166px;
+                        height: 40px;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }
@@ -112,12 +93,14 @@
                 display: none;
             }
 
-            &__button {
-                grid-column: 3 / 4;
-                width: 133px;
-                height: 40px;
-                font-weight: 600;
-                font-size: 14px;
+            .btn {
+                &-outline {
+                    &-primary {
+                        grid-column: 3 / 4;
+                        width: 133px;
+                        height: 40px;
+                    }
+                }
             }
 
             &__search-icon {
@@ -137,11 +120,6 @@
 @media screen and (max-width: 359px) {
     .header {
         &__container {
-            &__button {
-                grid-column: 3 / 4;
-                width: 112px;
-            }
-
             &__search-icon {
                 color: #464646;
                 display: block;
