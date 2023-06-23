@@ -1,7 +1,7 @@
 {
   "product": [
     {
-      "image": "../assets/images/cards/star-war/card-img-1.png",
+      "image": "../assets/images/cards/star-war/card-img-1.webp",
       "category": "Star Wars",
       "name": "Producto XYZ",
       "price": 99999,
@@ -9,7 +9,7 @@
       "id": "pm5gtcjr2c8"
     },
     {
-      "image": "../assets/images/cards/star-war/card-img-2.png",
+      "image": "../assets/images/cards/star-war/card-img-2.webp",
       "category": "Star Wars",
       "name": "Producto XYZ",
       "price": 99999,
@@ -17,7 +17,7 @@
       "id": "6dk3olr7ll1a"
     },
     {
-      "image": "../assets/images/cards/star-war/card-img-3.png",
+      "image": "../assets/images/cards/star-war/card-img-3.webp",
       "category": "Star Wars",
       "name": "Producto XYZ",
       "price": 99999,
@@ -25,7 +25,7 @@
       "id": "a748ao830i5"
     },
     {
-      "image": "../assets/images/cards/star-war/card-img-4.png",
+      "image": "../assets/images/cards/star-war/card-img-4.webp",
       "category": "Star Wars",
       "name": "Producto XYZ",
       "price": 99999,
@@ -33,7 +33,7 @@
       "id": "n6op01akd9g"
     },
     {
-      "image": "../assets/images/cards/star-war/card-img-5.png",
+      "image": "../assets/images/cards/star-war/card-img-5.webp",
       "category": "Star Wars",
       "name": "Producto XYZ",
       "price": 99999,
@@ -41,7 +41,7 @@
       "id": "cf4j37k8dq"
     },
     {
-      "image": "../assets/images/cards/star-war/card-img-6.png",
+      "image": "../assets/images/cards/star-war/card-img-6.webp",
       "category": "Star Wars",
       "name": "Producto XYZ",
       "price": 99999,
@@ -49,7 +49,7 @@
       "id": "6a0458cfkkg"
     },
     {
-      "image": "../assets/images/cards/consolas/card-img-1.png",
+      "image": "../assets/images/cards/consolas/card-img-1.webp",
       "category": "Consolas",
       "name": "Producto XYZ",
       "price": 99999,
@@ -57,7 +57,7 @@
       "id": "54fh032ftcbf"
     },
     {
-      "image": "../assets/images/cards/consolas/card-img-2.png",
+      "image": "../assets/images/cards/consolas/card-img-2.webp",
       "category": "Consolas",
       "name": "Producto XYZ",
       "price": 99999,
@@ -65,7 +65,7 @@
       "id": "eoma228kkbc"
     },
     {
-      "image": "../assets/images/cards/consolas/card-img-3.png",
+      "image": "../assets/images/cards/consolas/card-img-3.webp",
       "category": "Consolas",
       "name": "Producto XYZ",
       "price": 99999,
@@ -73,7 +73,7 @@
       "id": "q82g6j3mcsm"
     },
     {
-      "image": "../assets/images/cards/consolas/card-img-4.png",
+      "image": "../assets/images/cards/consolas/card-img-4.webp",
       "category": "Consolas",
       "name": "Producto XYZ",
       "price": 99999,
@@ -81,7 +81,7 @@
       "id": "tr5fg854f88"
     },
     {
-      "image": "../assets/images/cards/consolas/card-img-5.png",
+      "image": "../assets/images/cards/consolas/card-img-5.webp",
       "category": "Consolas",
       "name": "Producto XYZ",
       "price": 99999,
@@ -89,7 +89,7 @@
       "id": "j0m701cl5th"
     },
     {
-      "image": "../assets/images/cards/consolas/card-img-6.png",
+      "image": "../assets/images/cards/consolas/card-img-6.webp",
       "category": "Consolas",
       "name": "Producto XYZ",
       "price": 99999,
@@ -97,7 +97,7 @@
       "id": "bblosfm9kq1"
     },
     {
-      "image": "../assets/images/cards/diversos/card-img-1.png",
+      "image": "../assets/images/cards/diversos/card-img-1.webp",
       "category": "Diversos",
       "name": "Producto XYZ",
       "price": 99999,
@@ -105,7 +105,7 @@
       "id": "pcde6rdk6l8"
     },
     {
-      "image": "../assets/images/cards/diversos/card-img-2.png",
+      "image": "../assets/images/cards/diversos/card-img-2.webp",
       "category": "Diversos",
       "name": "Producto XYZ",
       "price": 99999,
@@ -113,7 +113,7 @@
       "id": "89nkmi87848"
     },
     {
-      "image": "../assets/images/cards/diversos/card-img-3.png",
+      "image": "../assets/images/cards/diversos/card-img-3.webp",
       "category": "Diversos",
       "name": "Producto XYZ",
       "price": 99999,
@@ -121,7 +121,7 @@
       "id": "4s2i2lad0lk"
     },
     {
-      "image": "../assets/images/cards/diversos/card-img-4.png",
+      "image": "../assets/images/cards/diversos/card-img-4.webp",
       "category": "Diversos",
       "name": "Producto XYZ",
       "price": 99999,
@@ -129,7 +129,7 @@
       "id": "amf5j0gl75c"
     },
     {
-      "image": "../assets/images/cards/diversos/card-img-5.png",
+      "image": "../assets/images/cards/diversos/card-img-5.webp",
       "category": "Diversos",
       "name": "Producto XYZ",
       "price": 99999,
@@ -137,7 +137,7 @@
       "id": "6drpo81ecfe"
     },
     {
-      "image": "../assets/images/cards/diversos/card-img-6.png",
+      "image": "../assets/images/cards/diversos/card-img-6.webp",
       "category": "Diversos",
       "name": "Producto XYZ",
       "price": 99999,
