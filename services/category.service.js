@@ -7,6 +7,10 @@ export const getCategory = () => {
   return fetch(`${urlApi}/category`).then(response => response.json());
 }
 
+export const getCategoryById = (id) => {
+  return fetch(`${urlApi}/category/${id}`).then(response => response.json());
+}
+
 export const setCategory = (name) => {
   const addCategory = new Category(name);
   return fetch(`${urlApi}/category`, {
