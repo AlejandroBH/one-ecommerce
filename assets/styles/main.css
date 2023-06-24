@@ -2493,6 +2493,9 @@ textarea.form-control-lg {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.view-product__info {
+  width: 100%;
+}
 .view-product__info__title {
   font-size: 52px;
   font-family: "Raleway";
@@ -2536,7 +2539,7 @@ textarea.form-control-lg {
   }
   .view-product__info {
     padding: 16px;
-    max-width: 572px;
+    max-width: 588px;
     margin: auto;
   }
   .view-product__info__description {
