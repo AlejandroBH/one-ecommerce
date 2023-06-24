@@ -25,12 +25,12 @@ export const url = "http://localhost:3000";
 validateForms();
 
 footerForm.addEventListener('submit', () => {
-    const isValid = footerForm.hasAttribute('valid');
+  const isValid = footerForm.hasAttribute('valid');
 
-    if (isValid) {
-        const btnSubmit = document.querySelector('[data-submit-footer]');
-        btnSubmit.disabled = true;
-    } else {
-        console.log('formulario no enviado');
-    }
+  if (isValid) {
+    const btnSubmit = document.querySelector('[data-submit-footer]');
+    btnSubmit.disabled = true;
+  } else {
+    console.log('formulario no enviado');
+  }
 });
