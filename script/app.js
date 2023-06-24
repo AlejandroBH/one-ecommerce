@@ -20,7 +20,7 @@ export const addProductDescription = document.querySelector("#description-produc
 const footerForm = document.querySelector(".footer__container__form");
 
 export const titleApp = "Alura Geek";
-export const url = "http://localhost:3000";
+export const urlApi = "http://localhost:3000";
 
 validateForms();
 

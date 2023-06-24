@@ -1,7 +1,8 @@
 "use strict";
 
+import { getParamByUrl } from "../controllers/get-param.controller.js";
 import { addProductForm, addProductCategory, addProductDescription, addProductImage, addProductName, addProductPrice, titleApp } from "../script/app.js";
-import { getParamByUrl, getProductById, putProductById } from "../services/product.service.js";
+import { getProductById, putProductById } from "../services/product.service.js";
 
 const productId = getParamByUrl("id");
 
