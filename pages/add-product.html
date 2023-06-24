@@ -27,7 +27,7 @@
         <form class="add-product__form needs-validation" novalidate>
             <h5 class="add-product__form__title">Agregar nuevo producto</h5>
             <div class="form-floating">
-                <input class="form-control" id="image-product" type="url" placeholder="URL de imagen" required>
+                <input class="form-control" id="image-product" type="text" placeholder="URL de imagen" required>
                 <label class="form-label" for="image-product">URL de imagen</label>
                 <div class="valid-tooltip">Esta todo correcto.</div>
                 <div class="invalid-tooltip">Este campo no puede estar vacío.</div>
@@ -56,7 +56,7 @@
                 <div class="valid-tooltip">Esta todo correcto.</div>
                 <div class="invalid-tooltip">Este campo no puede estar vacío.</div>
             </div>
-            <button class="btn btn-primary">Guardar cambios</button>
+            <button class="btn btn-primary" data-submit-add>Guardar cambios</button>
         </form>
     </section>
     <footer class="footer">
@@ -84,7 +84,7 @@
                     <div class="valid-tooltip">Esta todo correcto.</div>
                     <div class="invalid-tooltip">Este campo no puede estar vacío.</div>
                 </div>
-                <button class="btn btn-primary">Enviar mensaje</button>
+                <button class="btn btn-primary" data-submit-footer>Enviar mensaje</button>
             </form>
         </div>
         <div class="footer__copyright">

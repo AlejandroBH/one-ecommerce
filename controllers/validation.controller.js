@@ -10,6 +10,8 @@ export const validateForms = () => {
         if (!form.checkValidity()) {
           event.preventDefault();
           event.stopPropagation();
+        } else {
+          form.setAttribute('valid','');
         }
         event.preventDefault();
         form.classList.add("was-validated");

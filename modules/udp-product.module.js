@@ -1,6 +1,6 @@
 'use strict';
 
-import { addProductCategory, addProductDescription, addProductImage, addProductName, addProductPrice, titleApp } from "../script/app.js";
+import { addProductForm, addProductCategory, addProductDescription, addProductImage, addProductName, addProductPrice, titleApp } from "../script/app.js";
 import { getParamByUrl, getProductById } from "../services/product.service.js";
 
 const productId = getParamByUrl('id');
@@ -18,6 +18,16 @@ if (location.search === '') {
       addProductName.value = data.name;
       addProductPrice.value = data.price;
       addProductDescription.value = data.description;
+
+      addProductForm.addEventListener('submit', () => {
+        const isValid = addProductForm.hasAttribute('valid');
+
+        if(isValid){
+          const btnSubmit = document.querySelector('[data-submit-add]');
+          btnSubmit.disabled = true;
+          // TODO (crear funcion para modificar)
+        }
+      });
     }
   });
 }
