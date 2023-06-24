@@ -30,6 +30,7 @@ footerForm.addEventListener("submit", () => {
   if (isValid) {
     const btnSubmit = document.querySelector("[data-submit-footer]");
     btnSubmit.disabled = true;
+    console.log("formulario enviado");
   } else {
     console.log("formulario no enviado");
   }
