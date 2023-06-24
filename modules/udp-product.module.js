@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
 import { addProductForm, addProductCategory, addProductDescription, addProductImage, addProductName, addProductPrice, titleApp } from "../script/app.js";
 import { getParamByUrl, getProductById, putProductById } from "../services/product.service.js";
 
-const productId = getParamByUrl('id');
+const productId = getParamByUrl("id");
 
-if (location.search === '') {
-  location.href = '../pages/error.html';
+if (location.search === "") {
+  location.href = "../pages/error.html";
 } else {
   getProductById(productId).then(data => {
     if (data.name === undefined) {
-      location.href = '../pages/error.html';
+      location.href = "../pages/error.html";
     } else {
       document.title = `Actualizar ${data.name} - ${titleApp}`;
       addProductImage.value = data.image;
@@ -19,15 +19,15 @@ if (location.search === '') {
       addProductPrice.value = data.price;
       addProductDescription.value = data.description;
 
-      addProductForm.addEventListener('submit', () => {
-        const isValid = addProductForm.hasAttribute('valid');
+      addProductForm.addEventListener("submit", () => {
+        const isValid = addProductForm.hasAttribute("valid");
 
         if(isValid){
-          const btnSubmit = document.querySelector('[data-submit-add]');
+          const btnSubmit = document.querySelector("[data-submit-add]");
           btnSubmit.disabled = true;
           setTimeout(() => {
             putProductById(productId, addProductImage.value, addProductCategory.value, addProductName.value, addProductPrice.value, addProductDescription.value);
-            location.href = 'admin.html';
+            location.href = "admin.html";
           }, 1000);
         }
       });

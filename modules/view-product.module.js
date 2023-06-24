@@ -3,18 +3,18 @@
 import { titleApp, viewProductImage, viewProductInfoDescription, viewProductInfoPrice, viewProductInfoTitle } from "../script/app.js";
 import { getParamByUrl, getProductById } from "../services/product.service.js";
 
-const productId = getParamByUrl('id');
+const productId = getParamByUrl("id");
 
-if (location.search === '') {
-  location.href = '../pages/error.html';
+if (location.search === "") {
+  location.href = "../pages/error.html";
 } else {
   getProductById(productId).then(data => {
     if (data.name === undefined) {
-      location.href = '../pages/error.html';
+      location.href = "../pages/error.html";
     } else {
       document.title = `${data.name} - ${titleApp}`;
-      viewProductImage.setAttribute('src', data.image);
-      viewProductImage.setAttribute('alt', data.name);
+      viewProductImage.setAttribute("src", data.image);
+      viewProductImage.setAttribute("alt", data.name);
       viewProductInfoTitle.textContent = data.name;
       viewProductInfoPrice.textContent = `$ ${data.price}`;
       viewProductInfoDescription.textContent = data.description;

@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 import { url } from "../script/app.js";
 import { Product } from "../models/product.model.js"
@@ -14,7 +14,7 @@ export const getProductById = (id) => {
 export const setProduct = (image, category, name, price, description) => {
   const addProduct = new Product(image, category, name, price, description);
   return fetch(`${url}/product`, {
-    method: 'POST',
+    method: "POST",
     headers: {
       "Content-Type": "application/json"
     }, body: JSON.stringify(addProduct)
@@ -24,11 +24,17 @@ export const setProduct = (image, category, name, price, description) => {
 export const putProductById = (id, image, category, name, price, description) => {
   const putProduct = new Product(image, category, name, price, description);
   return fetch(`${url}/product/${id}`, {
-    method: 'PUT',
+    method: "PUT",
     headers: {
       "Content-Type": "application/json"
     }, body: JSON.stringify(putProduct)
   }).then(response => response);
+}
+
+export const delProductById = (id) => {
+  return fetch(`${url}/product/${id}`, {
+    method: "DELETE"
+  }).then(response => response)
 }
 
 export const getParamByUrl = (parameter) => {
