@@ -1,6 +1,6 @@
 "use strict";
 
-import { adminCards, productsCards } from "../script/app.js";
+import { adminCards, products, productsCards } from "../script/app.js";
 
 export const createCard = (item) => {
   const template = `
@@ -30,4 +30,14 @@ export const createCardAdmin = (item) => {
   </div>
   `;
   adminCards.innerHTML += template;
+}
+
+export const createCategoryTitle = (item) => {
+  const template = `
+  <div class="products__header">
+    <h3 class="products__header__title">${item.name}</h3>
+    <a href="pages/products.html?category=${item.id}" class="products__header__button">Ver todo <span class="material-symbols-outlined">arrow_forward</span></a>
+  </div>
+  `;
+  products.innerHTML += template;
 }

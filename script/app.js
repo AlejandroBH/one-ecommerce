@@ -2,6 +2,7 @@
 
 import { validateForms } from "../controllers/validation.controller.js";
 
+export const products = document.querySelector(".products");
 export const productsCards = document.querySelector(".products__cards");
 export const adminCards = document.querySelector(".admin__cards");
 
