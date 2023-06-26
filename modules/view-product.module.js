@@ -1,6 +1,6 @@
 "use strict";
 
-import { createCard } from "../controllers/create-card.controller.js";
+import { createCard } from "../controllers/create-template.controller.js";
 import { getParamByUrl } from "../controllers/get-param.controller.js";
 import { titleApp, viewProductImage, viewProductInfoDescription, viewProductInfoPrice, viewProductInfoTitle } from "../script/app.js";
 import { getProductById, getProducts } from "../services/product.service.js";

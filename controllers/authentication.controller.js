@@ -2,14 +2,13 @@
 
 import { loginFormAlert } from "../script/app.js";
 import { getUserById, getUsers } from "../services/user.service.js";
-import { createAlert } from "./create-card.controller.js";
+import { createAlert } from "./create-template.controller.js";
 
 export const validateAuthentication = (email, password) => {
   const btnSubmitLogin = document.querySelector("[data-submit-login]");
   getUsers().then(users => {
     for (let user of users) {
       if (user.email === email) {
-        console.log(`cuenta ${user.name} existe`);
         getUserById(user.id).then(user => {
           if (user.password === password) {
             loginFormAlert.innerHTML = createAlert("success", "Acceso correcto, porfavor espere.");

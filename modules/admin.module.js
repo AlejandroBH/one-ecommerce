@@ -1,6 +1,6 @@
 "use strict";
 
-import { createCardAdmin } from "../controllers/create-card.controller.js";
+import { createCardAdmin } from "../controllers/create-template.controller.js";
 import { delProductById, getProducts } from "../services/product.service.js";
 
 getProducts().then(data => {
