@@ -2604,6 +2604,9 @@ textarea.form-control-lg {
   height: 82px !important;
   resize: none;
 }
+.form-floating .textarea-big {
+  height: 200px !important;
+}
 .form-label {
   color: #a2a2a2;
   width: 100%;
