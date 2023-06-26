@@ -2,9 +2,19 @@
 
 import { getParamByUrl } from "../controllers/get-param.controller.js";
 import { addProductForm, addProductCategory, addProductDescription, addProductImage, addProductName, addProductPrice, titleApp } from "../script/app.js";
+import { getCategory } from "../services/category.service.js";
 import { getProductById, putProductById } from "../services/product.service.js";
 
 const productId = getParamByUrl("id");
+
+getCategory().then(data => {
+  for (let item of data) {
+    const itemCategory = document.createElement('option');
+    itemCategory.setAttribute('value',`${item.id}`);
+    itemCategory.innerHTML = `${item.id} - ${item.name}`;
+    addProductCategory.appendChild(itemCategory);
+  }
+});
 
 if (location.search === "") {
   location.href = "../pages/error.html";

@@ -2608,12 +2608,12 @@ textarea.form-control-lg {
   color: #a2a2a2;
   width: 100%;
 }
-.form-control {
+.form-control, .form-select {
   border: none;
   border-radius: 4px;
   border-bottom: 1px solid #c8c8c8;
 }
-.form-control:focus {
+.form-control:focus, .form-select:focus {
   box-shadow: none;
   border-bottom: 1px solid #c8c8c8;
 }
@@ -2641,8 +2641,18 @@ textarea.form-control-lg {
   box-shadow: none;
 }
 
+.was-validated .form-select:valid:focus,
+.form-select.is-valid:focus {
+  box-shadow: none;
+}
+
 .was-validated .form-control:invalid:focus,
 .form-control.is-invalid:focus {
+  box-shadow: none;
+}
+
+.was-validated .form-select:invalid:focus,
+.form-select.is-invalid:focus {
   box-shadow: none;
 }
 

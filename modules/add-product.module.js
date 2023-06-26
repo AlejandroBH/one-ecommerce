@@ -1,7 +1,17 @@
 "use strict";
 
 import { addProductCategory, addProductDescription, addProductForm, addProductImage, addProductName, addProductPrice } from "../script/app.js";
+import { getCategory } from "../services/category.service.js";
 import { setProduct } from "../services/product.service.js";
+
+getCategory().then(data => {
+  for (let item of data) {
+    const itemCategory = document.createElement('option');
+    itemCategory.setAttribute('value',`${item.id}`);
+    itemCategory.innerHTML = `${item.id} - ${item.name}`;
+    addProductCategory.appendChild(itemCategory);
+  }
+});
 
 addProductForm.addEventListener("submit", () => {
   const image = addProductImage.value;
