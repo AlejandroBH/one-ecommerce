@@ -18,6 +18,10 @@ export const addProductName = document.querySelector("#name-product");
 export const addProductPrice = document.querySelector("#price-product");
 export const addProductDescription = document.querySelector("#description-product");
 
+export const loginForm = document.querySelector('.login__form');
+export const loginEmail = document.querySelector('#login-email');
+export const loginPassword = document.querySelector('#login-password');
+
 const footerForm = document.querySelector(".footer__container__form");
 
 export const titleApp = "Alura Geek";

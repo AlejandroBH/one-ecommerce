@@ -4,8 +4,15 @@
       "admin": true,
       "name": "admin",
       "email": "admin@email.com",
-      "password": "alura123",
+      "password": "admin123",
       "id": 1
+    },
+    {
+      "admin": false,
+      "name": "user",
+      "email": "user@email.com",
+      "password": "user123",
+      "id": 2
     }
   ],
   "category": [
