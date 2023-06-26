@@ -40,7 +40,7 @@ export const createCardHome = (item) => {
     <h5 class="products__cards__item__price">$ ${item.price}</h5>
     <a href="../pages/view-product.html?id=${item.id}" class="products__cards__item__button">Ver producto</a>
   </div>
-`;
+  `;
   return template;
 }
 
@@ -53,4 +53,12 @@ export const createCategoryTitle = (item) => {
   <div class="products__cards" data-category-${item.id}></div>
   `;
   products.innerHTML += template;
+}
+
+export const createAlert = (type, message) => {
+  const template = `
+  <div class="alert alert-${type}" role="alert">${message}</div>
+  `;
+
+  return template;
 }

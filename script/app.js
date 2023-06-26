@@ -21,6 +21,7 @@ export const addProductDescription = document.querySelector("#description-produc
 export const loginForm = document.querySelector('.login__form');
 export const loginEmail = document.querySelector('#login-email');
 export const loginPassword = document.querySelector('#login-password');
+export const loginFormAlert = document.querySelector('.login__form__alert');
 
 const footerForm = document.querySelector(".footer__container__form");
 
