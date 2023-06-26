@@ -1,4 +1,13 @@
 {
+  "user": [
+    {
+      "admin": true,
+      "name": "admin",
+      "email": "admin@email.com",
+      "password": "alura123",
+      "id": 1
+    }
+  ],
   "category": [
     {
       "name": "Star Wars",

@@ -6,8 +6,8 @@ import { setProduct } from "../services/product.service.js";
 
 getCategory().then(data => {
   for (let item of data) {
-    const itemCategory = document.createElement('option');
-    itemCategory.setAttribute('value',`${item.id}`);
+    const itemCategory = document.createElement("option");
+    itemCategory.setAttribute("value",`${item.id}`);
     itemCategory.innerHTML = `${item.id} - ${item.name}`;
     addProductCategory.appendChild(itemCategory);
   }

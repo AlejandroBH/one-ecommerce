@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 import { createCardHome, createCategoryTitle } from "../controllers/create-card.controller.js";
 import { getCategory } from "../services/category.service.js";
