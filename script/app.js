@@ -29,7 +29,7 @@ export const loginFormAlert = document.querySelector(".login__form__alert");
 const footerForm = document.querySelector(".footer__container__form");
 
 export const titleApp = "Alura Geek";
-export const urlApi = "http://localhost:3000";
+export const urlApi = "https://api-alurageek-eko9.onrender.com";
 
 validateForms();
 
