@@ -24,7 +24,6 @@ getProducts().then(data => {
     item.addEventListener("click", () => {
       const attribute = item.getAttribute("data-card-del");
       delProductById(attribute);
-      location.reload();
     });
   });
 });
