@@ -11,14 +11,14 @@ export const validateAuthentication = (email, password) => {
       if (user.email === email) {
         getUserById(user.id).then(user => {
           if (user.password === password) {
-            loginFormAlert.innerHTML = createAlert("success", "Acceso correcto, porfavor espere.");
+            loginFormAlert.innerHTML = createAlert("success", "Acceso correcto, por favor espere.");
             btnSubmitLogin.disabled = true;
             setTimeout(() => {
               location.href = "../index.html";
               localStorage.setItem("login", user.name);
             }, 1000);
           } else {
-            loginFormAlert.innerHTML = createAlert("danger", "La contraseña es incorrecta.");
+            loginFormAlert.innerHTML = createAlert("danger", "Los datos ingresados son incorrectos.");
           }
         })
       } else {
