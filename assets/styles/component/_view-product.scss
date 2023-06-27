@@ -6,6 +6,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 16px;
+    animation: fadeIn 1s ease normal;
 
     &__image {
         max-height: 403px;
@@ -37,6 +38,12 @@
             max-height: 250px;
             overflow-y: auto;
         }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.0;
     }
 }
 

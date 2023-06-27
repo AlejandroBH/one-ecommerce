@@ -9,6 +9,7 @@
         margin-bottom: 16px;
         margin-top: 64px;
         align-items: center;
+        animation: fadeIn 1s ease normal;
 
         &__title {
             font-size: 32px;
@@ -38,6 +39,7 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         gap: 16px;
+        animation: fadeIn 1s ease normal;
 
         .item-limit:nth-child(n +7) {
             display: none;
@@ -48,6 +50,7 @@
             flex-direction: column;
             align-items: flex-start;
             transition: 0.2s;
+            animation: fadeIn 1s ease normal;
 
             &:hover {
                 scale: 1.15;
@@ -92,6 +95,12 @@
         &--gap {
             gap: 64px 16px;
         }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.0;
     }
 }
 

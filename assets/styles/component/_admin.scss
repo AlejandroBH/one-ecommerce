@@ -25,6 +25,7 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         gap: 64px 16px;
+        animation: fadeIn 1s ease normal;
 
         &__item {
             display: flex;
@@ -82,6 +83,12 @@
                 margin-bottom: 8px;
             }
         }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.0;
     }
 }
 

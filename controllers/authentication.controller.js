@@ -22,7 +22,7 @@ export const validateAuthentication = (email, password) => {
           }
         })
       } else {
-        loginFormAlert.innerHTML = createAlert("danger", "La cuenta ingresada no existe.");
+        loginFormAlert.innerHTML = createAlert("danger", "Los datos ingresados son incorrectos.");
       }
     }
   })

@@ -2097,6 +2097,7 @@ textarea.form-control-lg {
   margin-bottom: 16px;
   margin-top: 64px;
   align-items: center;
+  animation: fadeIn 1s ease normal;
 }
 .products__header__title {
   font-size: 32px;
@@ -2122,6 +2123,7 @@ textarea.form-control-lg {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 16px;
+  animation: fadeIn 1s ease normal;
 }
 .products__cards .item-limit:nth-child(n+7) {
   display: none;
@@ -2131,6 +2133,7 @@ textarea.form-control-lg {
   flex-direction: column;
   align-items: flex-start;
   transition: 0.2s;
+  animation: fadeIn 1s ease normal;
 }
 .products__cards__item:hover {
   scale: 1.15;
@@ -2171,6 +2174,11 @@ textarea.form-control-lg {
   gap: 64px 16px;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+}
 @media screen and (max-width: 1024px) {
   .products {
     padding: 0px 0px 32px;
@@ -2442,6 +2450,7 @@ textarea.form-control-lg {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 64px 16px;
+  animation: fadeIn 1s ease normal;
 }
 .admin__cards__item {
   display: flex;
@@ -2493,6 +2502,11 @@ textarea.form-control-lg {
   margin-bottom: 8px;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+}
 @media screen and (max-width: 1024px) {
   .admin {
     padding: 0px 0px 32px;
@@ -2585,6 +2599,7 @@ textarea.form-control-lg {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 16px;
+  animation: fadeIn 1s ease normal;
 }
 .view-product__image {
   max-height: 403px;
@@ -2615,6 +2630,11 @@ textarea.form-control-lg {
   overflow-y: auto;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+}
 @media screen and (max-width: 1024px) {
   .view-product {
     padding: 32px;
