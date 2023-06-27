@@ -7,7 +7,7 @@ import { getCategoryById } from "../services/category.service.js";
 import { getProducts } from "../services/product.service.js";
 
 const categoryId = getParamByUrl("category");
-
+const titleCategory = document.querySelector(".products__header__title");
 
 if (location.search === ""){
   location.href = "../pages/error.html";
@@ -17,6 +17,7 @@ if (location.search === ""){
       location.href = "../pages/error.html";
     } else {
       document.title = `${category.name} - ${titleApp}`;
+      titleCategory.innerHTML += category.name;
       getProducts().then(product => {
         product.forEach((item) => {
           if(item.category == categoryId){

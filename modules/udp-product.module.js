@@ -1,5 +1,6 @@
 "use strict";
 
+import { validateSession } from "../controllers/authentication.controller.js";
 import { getParamByUrl } from "../controllers/get-param.controller.js";
 import { addProductForm, addProductCategory, addProductDescription, addProductImage, addProductName, addProductPrice, titleApp } from "../script/app.js";
 import { getCategory } from "../services/category.service.js";
@@ -45,3 +46,5 @@ if (location.search === "") {
     }
   });
 }
+
+validateSession();

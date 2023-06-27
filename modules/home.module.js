@@ -1,5 +1,6 @@
 "use strict";
 
+import { validateUser } from "../controllers/authentication.controller.js";
 import { createCardHome, createCategoryTitle } from "../controllers/create-template.controller.js";
 import { getCategory } from "../services/category.service.js";
 import { getProducts } from "../services/product.service.js";
@@ -22,3 +23,5 @@ getCategory().then(category => {
     })
   }
 })
+
+validateUser();

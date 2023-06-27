@@ -1,5 +1,6 @@
 "use strict";
 
+import { validateSession } from "../controllers/authentication.controller.js";
 import { addProductCategory, addProductDescription, addProductForm, addProductImage, addProductName, addProductPrice } from "../script/app.js";
 import { getCategory } from "../services/category.service.js";
 import { setProduct } from "../services/product.service.js";
@@ -30,3 +31,5 @@ addProductForm.addEventListener("submit", () => {
     }, 1000);
   }
 });
+
+validateSession();

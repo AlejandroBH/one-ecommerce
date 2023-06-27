@@ -2,14 +2,14 @@
   "user": [
     {
       "admin": true,
-      "name": "admin",
+      "name": "Admin",
       "email": "admin@email.com",
       "password": "admin123",
       "id": 1
     },
     {
       "admin": false,
-      "name": "user",
+      "name": "User",
       "email": "user@email.com",
       "password": "user123",
       "id": 2

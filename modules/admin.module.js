@@ -1,6 +1,8 @@
 "use strict";
 
+import { logoutSession, validateSession } from "../controllers/authentication.controller.js";
 import { createCardAdmin } from "../controllers/create-template.controller.js";
+import { userButtonLogout } from "../script/app.js";
 import { delProductById, getProducts } from "../services/product.service.js";
 
 getProducts().then(data => {
@@ -25,3 +27,7 @@ getProducts().then(data => {
     });
   });
 });
+
+userButtonLogout.addEventListener("click", logoutSession);
+
+validateSession();

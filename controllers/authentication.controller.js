@@ -1,6 +1,6 @@
 "use strict";
 
-import { loginFormAlert } from "../script/app.js";
+import { loginFormAlert, userButton } from "../script/app.js";
 import { getUserById, getUsers } from "../services/user.service.js";
 import { createAlert } from "./create-template.controller.js";
 
@@ -14,7 +14,8 @@ export const validateAuthentication = (email, password) => {
             loginFormAlert.innerHTML = createAlert("success", "Acceso correcto, porfavor espere.");
             btnSubmitLogin.disabled = true;
             setTimeout(() => {
-              location.href = "admin.html";
+              location.href = "../index.html";
+              localStorage.setItem("login", user.name);
             }, 1000);
           } else {
             loginFormAlert.innerHTML = createAlert("danger", "La contraseña es incorrecta.");
@@ -25,4 +26,47 @@ export const validateAuthentication = (email, password) => {
       }
     }
   })
+}
+
+export const validateUser = () => {
+  const login = localStorage.getItem("login");
+
+  if (login !== null) {
+    getUsers().then(data => {
+      for (let user of data) {
+        if (login === user.name) {
+          if (user.admin === true) {
+            // Is Admin
+            userButton.innerHTML = user.name;
+            userButton.setAttribute("href", "/pages/admin.html");
+          } else {
+            // Not Admin
+            userButton.innerHTML = user.name;
+            userButton.setAttribute("href", "/pages/cart.html");
+          }
+        }
+      }
+    })
+  }
+}
+
+export const validateSession = () => {
+  const login = localStorage.getItem("login");
+
+  if (login !== null) {
+    getUsers().then(data => {
+      for (let user of data) {
+        if (login === user.name && !user.admin) {
+          location.href = "/pages/error.html";
+        }
+      }
+    })
+  } else {
+    location.href = "/pages/error.html";
+  }
+}
+
+export const logoutSession = () => {
+  localStorage.clear();
+  location.href = "../index.html";
 }
