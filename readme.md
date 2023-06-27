@@ -2,11 +2,11 @@
 
 <div align="center">
   
-  ![Alura Geek]()
+  ![Alura Geek](https://raw.githubusercontent.com/AlejandroBH/one-ecommerce/main/assets/images/review.png)
 
 </div>
 
-_Este proyecto forma parte del programa de formación Oracle Next Educación Grupo 3, en el cual tuve que hacer un CRUD de una tienda virtual.
+* Este proyecto forma parte del programa de formación Oracle Next Educación Grupo 3, en el cual tuve que hacer un CRUD de una tienda virtual.
 
 [Puedes probarlo aqui!](https://alejandrobh.github.io/one-ecommerce)
 
@@ -39,7 +39,7 @@ _Este proyecto forma parte del programa de formación Oracle Next Educación Gru
 
 <div align="center">
   
-  ![giphy]()
+  ![giphy](https://raw.githubusercontent.com/AlejandroBH/one-ecommerce/main/assets/images/develop.gif)
   
   ⌨️ con ❤️ por [AlejandroBH](https://www.linkedin.com/in/alejandro-bh91/) 😊
 </div>
