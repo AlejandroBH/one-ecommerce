@@ -38,11 +38,11 @@ export const validateUser = () => {
           if (user.admin === true) {
             // Is Admin
             userButton.innerHTML = user.name;
-            userButton.setAttribute("href", "/pages/admin.html");
+            userButton.setAttribute("href", "pages/admin.html");
           } else {
             // Not Admin
             userButton.innerHTML = user.name;
-            userButton.setAttribute("href", "/pages/cart.html");
+            userButton.setAttribute("href", "pages/cart.html");
           }
         }
       }

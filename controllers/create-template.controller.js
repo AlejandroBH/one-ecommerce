@@ -38,7 +38,7 @@ export const createCardHome = (item) => {
     <img class="products__cards__item__image" src="${item.image}" alt="${item.name}">
     <h5 class="products__cards__item__name">${item.name}</h5>
     <h5 class="products__cards__item__price">$ ${item.price}</h5>
-    <a href="../pages/view-product.html?id=${item.id}" class="products__cards__item__button">Ver producto</a>
+    <a href="pages/view-product.html?id=${item.id}" class="products__cards__item__button">Ver producto</a>
   </div>
   `;
   return template;
