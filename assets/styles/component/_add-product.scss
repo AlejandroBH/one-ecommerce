@@ -1,0 +1,46 @@
+.add-product {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 64px 0px;
+
+    &__form {
+        width: 100%;
+        max-width: 559px;
+        margin: auto;
+
+        &__title {
+            font-size: 32px;
+            font-family: 'Raleway';
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .btn {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .add-product {
+        padding: 0;
+
+        &__form {
+            width: 100%;
+            padding: 32px;
+
+            &__title {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .add-product {
+        &__form {
+            width: 100%;
+            padding: 16px;
+        }
+    }
+}

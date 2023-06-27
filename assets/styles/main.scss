@@ -1,0 +1,71 @@
+@import 'component/bootstrap';
+@import 'component/header';
+@import 'component/hero';
+@import 'component/products';
+@import 'component/footer';
+@import 'component/login';
+@import 'component/admin';
+@import 'component/add-product';
+@import 'component/view-product';
+@import 'component/error';
+@import 'component/form';
+@import 'component/button';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5F5F5;
+    color: #464646;
+    font-family: 'Raleway';
+}
+
+p {
+    margin: 0;
+}
+
+:root {
+    --max-width: 1144px;
+    --primary: #2A7AE4;
+    --primary-hover: #1f6bce;
+    --secondary: #EAF2FD;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar:horizontal {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway Italic';
+    src: url(../fonts/Raleway-Italic.ttf);
+}

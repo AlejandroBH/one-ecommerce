@@ -1,0 +1,27 @@
+.btn {
+    width: 182px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    &-primary {
+        background: var(--primary);
+
+        &:hover {
+            background: var(--primary-hover);
+        }
+    }
+
+    &-outline {
+        &-primary {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+
+            &:hover {
+                background: var(--primary);
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.header {
+    background: #FFFFFF;
+
+    &__container {
+        max-width: var(--max-width);
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        align-items: center;
+        height: 115px;
+        padding: 0px 8px;
+
+        &__logo {
+            cursor: pointer;
+            margin-right: 32px;
+        }
+
+        &__search {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Raleway';
+            background: #F5F5F5;
+            padding: 8px 16px;
+            width: 393px;
+            border-radius: 20px;
+
+            &__input {
+                width: 100%;
+                background: transparent;
+                border: none;
+                font-size: 14px;
+
+                &:focus-visible {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: #A2A2A2;
+                }
+            }
+
+            &__icon {
+                color: #A2A2A2;
+            }
+        }
+
+        &__search-icon {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        &__container {
+            padding: 0px 32px;
+            height: 72px;
+
+            &__logo {
+                width: 100px;
+            }
+
+            &__search {
+                width: 272px;
+            }
+
+            .btn {
+                &-outline {
+                    &-primary {
+                        width: 166px;
+                        height: 40px;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        &__container {
+            padding: 0px 16px;
+            height: 72px;
+
+            &__logo {
+                width: 100px;
+            }
+
+            &__search {
+                width: 272px;
+                display: none;
+            }
+
+            .btn {
+                &-outline {
+                    &-primary {
+                        grid-column: 3 / 4;
+                        width: 133px;
+                        height: 40px;
+                    }
+                }
+            }
+
+            &__search-icon {
+                color: #464646;
+                display: block;
+                margin-left: 32px;
+
+                span {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .header {
+        &__container {
+            &__search-icon {
+                color: #464646;
+                display: block;
+                margin-left: 4px;
+
+                span {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

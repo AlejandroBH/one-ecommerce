@@ -1,0 +1,80 @@
+.form {
+    &-floating {
+        width: 100%;
+        margin-bottom: 16px;
+
+        textarea {
+            height: 82px !important;
+            resize: none;
+        }
+
+        .textarea-big {
+            height: 200px !important;
+        }
+    }
+
+    &-label {
+        color: #a2a2a2;
+        width: 100%;
+    }
+
+    &-control,
+    &-select {
+        border: none;
+        border-radius: 4px;
+        border-bottom: 1px solid #c8c8c8;
+
+        &:focus {
+            box-shadow: none;
+            border-bottom: 1px solid #c8c8c8;
+        }
+    }
+}
+
+// Modify default position and font size in tooltip bootstrap
+.invalid-tooltip,
+.valid-tooltip {
+    font-size: 12px;
+    margin-top: -15px;
+    right: 0;
+}
+
+// Modify default scale in inputs floating bootstrap
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-control-plaintext~label,
+.form-floating>.form-select~label {
+    transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+}
+
+// Disabled default shadow in inputs bootstrap
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus {
+    box-shadow: none;
+}
+
+.was-validated .form-select:valid:focus,
+.form-select.is-valid:focus {
+    box-shadow: none;
+}
+
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus {
+    box-shadow: none;
+}
+
+.was-validated .form-select:invalid:focus,
+.form-select.is-invalid:focus {
+    box-shadow: none;
+}
+
+// Hide arow in input type number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
