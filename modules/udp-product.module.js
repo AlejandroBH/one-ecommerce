@@ -37,8 +37,8 @@ if (location.search === "") {
         if(isValid){
           const btnSubmit = document.querySelector("[data-submit-add]");
           btnSubmit.disabled = true;
+          putProductById(productId, addProductImage.value, addProductCategory.value, addProductName.value, addProductPrice.value, addProductDescription.value);
           setTimeout(() => {
-            putProductById(productId, addProductImage.value, addProductCategory.value, addProductName.value, addProductPrice.value, addProductDescription.value);
             location.href = "admin.html";
           }, 1000);
         }

@@ -25,8 +25,8 @@ addProductForm.addEventListener("submit", () => {
   if (isValid) {
     const btnSubmit = document.querySelector("[data-submit-add]");
     btnSubmit.disabled = true;
+    setProduct(image, category, name, price, description);
     setTimeout(() => {
-      setProduct(image, category, name, price, description);
       location.href = "admin.html";
     }, 1000);
   }
