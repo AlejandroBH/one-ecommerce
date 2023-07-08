@@ -15,11 +15,11 @@ header.style.display="none";
 insertLoading(true, extraPage);
 
 if (location.search === ""){
-  location.href = "../pages/error.html";
+  location.href = "../pages/error/404.html";
 } else {
   getCategoryById(categoryId).then(category => {
     if (category.name === undefined){
-      location.href = "../pages/error.html";
+      location.href = "../pages/error/404.html";
     } else {
       header.style.display="flex";
       insertLoading(false, extraPage);

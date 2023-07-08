@@ -22,11 +22,11 @@ getCategory().then(data => {
 });
 
 if (location.search === "") {
-  location.href = "../pages/error.html";
+  location.href = "../pages/error/404.html";
 } else {
   getProductById(productId).then(data => {
     if (data.name === undefined) {
-      location.href = "../pages/error.html";
+      location.href = "../pages/error/404.html";
     } else {
       document.title = `Actualizar ${data.name} - ${titleApp}`;
       addProductImage.value = data.image;

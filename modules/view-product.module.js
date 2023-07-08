@@ -11,11 +11,11 @@ insertLoading(true, extraPage);
 const productId = getParamByUrl("id");
 
 if (location.search === "") {
-  location.href = "../pages/error.html";
+  location.href = "../pages/error/404.html";
 } else {
   getProductById(productId).then(data => {
     if (data.name === undefined) {
-      location.href = "../pages/error.html";
+      location.href = "../pages/error/404.html";
     } else {
       document.title = `${data.name} - ${titleApp}`;
       viewProductImage.setAttribute("src", data.image);
