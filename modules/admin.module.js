@@ -3,13 +3,13 @@
 import { logoutSession, validateSession } from "../controllers/authentication.controller.js";
 import { createCardAdmin } from "../controllers/create-template.controller.js";
 import { insertLoading } from "../controllers/loading.controller.js";
-import { loadingPage, userButtonLogout } from "../script/app.js";
+import { extraPage, userButtonLogout } from "../script/app.js";
 import { delProductById, getProducts } from "../services/product.service.js";
 
-insertLoading(true, loadingPage);
+insertLoading(true, extraPage);
 
 getProducts().then(data => {
-  insertLoading(false, loadingPage);
+  insertLoading(false, extraPage);
 
   for (let item of data) {
     createCardAdmin(item);

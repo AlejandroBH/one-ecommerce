@@ -3,14 +3,14 @@
 import { validateUser } from "../controllers/authentication.controller.js";
 import { createCardHome, createCategoryTitle } from "../controllers/create-template.controller.js";
 import { insertLoading } from "../controllers/loading.controller.js";
-import { loadingPage } from "../script/app.js";
+import { extraPage } from "../script/app.js";
 import { getCategory } from "../services/category.service.js";
 import { getProducts } from "../services/product.service.js";
 
-insertLoading(true, loadingPage);
+insertLoading(true, extraPage);
 
 getCategory().then(category => {
-  insertLoading(false, loadingPage);
+  insertLoading(false, extraPage);
 
   for (let itemCat of category) {
     createCategoryTitle(itemCat);

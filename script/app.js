@@ -21,7 +21,7 @@ export const loginForm = document.querySelector(".login__form");
 export const loginEmail = document.querySelector("#login-email");
 export const loginPassword = document.querySelector("#login-password");
 export const loginFormAlert = document.querySelector(".login__form__alert");
-export const loadingPage = document.querySelector(".loading-page");
+export const extraPage = document.querySelector(".extra");
 const footerForm = document.querySelector(".footer__container__form");
 
 export const titleApp = "Alura Geek";
