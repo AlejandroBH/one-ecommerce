@@ -2,8 +2,11 @@
 
 import { createCard } from "../controllers/create-template.controller.js";
 import { getParamByUrl } from "../controllers/get-param.controller.js";
-import { titleApp, viewProductImage, viewProductInfoDescription, viewProductInfoPrice, viewProductInfoTitle } from "../script/app.js";
+import { insertLoading } from "../controllers/loading.controller.js";
+import { extraPage, titleApp, viewProductImage, viewProductInfoDescription, viewProductInfoPrice, viewProductInfoTitle } from "../script/app.js";
 import { getProductById, getProducts } from "../services/product.service.js";
+
+insertLoading(true, extraPage);
 
 const productId = getParamByUrl("id");
 
@@ -21,6 +24,8 @@ if (location.search === "") {
       viewProductInfoPrice.textContent = `$ ${data.price}`;
       viewProductInfoDescription.textContent = data.description;
       getProducts().then(product => {
+      insertLoading(false, extraPage);
+
         const arrProduct = [];
         let limit = 0;
         
