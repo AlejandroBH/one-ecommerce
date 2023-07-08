@@ -3,20 +3,38 @@
 import { User } from "../models/user.model.js";
 import { urlApi } from "../script/app.js";
 
-export const getUsers = () => {
-  return fetch(`${urlApi}/user`).then(response => response.json());
+export const getUsers = async () => {
+  try {
+    const response = await fetch(`${urlApi}/user`);
+    return await response.json();
+  } catch (error) {
+    location.href = '../pages/error/503.html';
+    console.log(error);
+  }
 }
 
-export const getUserById = (id) => {
-  return fetch(`${urlApi}/user/${id}`).then(response => response.json());
+export const getUserById = async (id) => {
+  try {
+    const response = await fetch(`${urlApi}/user/${id}`);
+    return await response.json();
+  } catch (error) {
+    location.href = '../pages/error/503.html';
+    console.log(error);
+  }
 }
 
-export const setUser = (name, email, password) => {
+export const setUser = async (name, email, password) => {
   const addUser = new User(name, email, password)
-  return fetch(`${urlApi}/user`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    }, body: JSON.stringify(addUser)
-  }).then(response => response);
+  try {
+    const response = await fetch(`${urlApi}/user`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      }, body: JSON.stringify(addUser)
+    });
+    return response;
+  } catch (error) {
+    location.href = '../pages/error/503.html';
+    console.log(error);
+  }
 }
