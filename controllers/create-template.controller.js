@@ -59,6 +59,16 @@ export const createAlert = (type, message) => {
   const template = `
   <div class="alert alert-${type}" role="alert">${message}</div>
   `;
+  return template;
+}
 
+export const createLoading = () => {
+  const template = `
+  <div class="load-products">
+    <span class="loader"></span>
+    <h2 class="load-products__title">¡Cargando, por favor espere!</h2>
+    <p class="load-products__subtitle">En breve mostramos el contenido.</p>
+  </div>
+  `;
   return template;
 }

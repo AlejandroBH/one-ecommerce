@@ -2,10 +2,15 @@
 
 import { logoutSession, validateSession } from "../controllers/authentication.controller.js";
 import { createCardAdmin } from "../controllers/create-template.controller.js";
-import { userButtonLogout } from "../script/app.js";
+import { insertLoading } from "../controllers/loading.controller.js";
+import { loadingPage, userButtonLogout } from "../script/app.js";
 import { delProductById, getProducts } from "../services/product.service.js";
 
+insertLoading(true, loadingPage);
+
 getProducts().then(data => {
+  insertLoading(false, loadingPage);
+
   for (let item of data) {
     createCardAdmin(item);
   }

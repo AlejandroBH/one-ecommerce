@@ -2,10 +2,16 @@
 
 import { validateUser } from "../controllers/authentication.controller.js";
 import { createCardHome, createCategoryTitle } from "../controllers/create-template.controller.js";
+import { insertLoading } from "../controllers/loading.controller.js";
+import { loadingPage } from "../script/app.js";
 import { getCategory } from "../services/category.service.js";
 import { getProducts } from "../services/product.service.js";
 
+insertLoading(true, loadingPage);
+
 getCategory().then(category => {
+  insertLoading(false, loadingPage);
+
   for (let itemCat of category) {
     createCategoryTitle(itemCat);
 
