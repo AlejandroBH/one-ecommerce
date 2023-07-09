@@ -32,6 +32,7 @@ export const setProduct = async (image, category, name, price, description) => {
         "Content-Type": "application/json"
       }, body: JSON.stringify(addProduct)
     });
+    location.href = "admin.html";
     return response;
   } catch (error) {
     location.href = "../pages/error/503.html";
