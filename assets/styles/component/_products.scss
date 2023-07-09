@@ -121,6 +121,15 @@
             grid-template-columns: repeat(4, 1fr);
             padding: 0px 32px;
 
+            &__item {
+                &:hover {
+                    scale: 1;
+                    box-shadow: none;
+                    background: transparent;
+                    padding: 0;
+                }
+            }
+
             .item-limit:nth-child(n +5) {
                 display: none;
             }

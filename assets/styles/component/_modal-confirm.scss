@@ -4,9 +4,11 @@
     align-items: center;
     background: #FFFFFF;
     max-width: 500px;
+    width: 100%;
     padding: 32px;
     border-radius: 8px;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
+    animation: openModal 0.3s ease normal;
 
     &__btn {
         display: flex;
@@ -15,6 +17,12 @@
         button {
             margin: 8px;
         }
+    }
+}
+
+@keyframes openModal {
+    0% {
+        scale: 0.9;
     }
 }
 

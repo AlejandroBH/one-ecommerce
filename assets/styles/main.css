@@ -2194,6 +2194,12 @@ textarea.form-control-lg {
     grid-template-columns: repeat(4, 1fr);
     padding: 0px 32px;
   }
+  .products__cards__item:hover {
+    scale: 1;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+  }
   .products__cards .item-limit:nth-child(n+5) {
     display: none;
   }
@@ -2528,6 +2534,12 @@ textarea.form-control-lg {
     padding: 0px 32px;
     gap: 16px;
   }
+  .admin__cards__item:hover {
+    scale: 1;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .admin {
@@ -2708,9 +2720,11 @@ textarea.form-control-lg {
   align-items: center;
   background: #FFFFFF;
   max-width: 500px;
+  width: 100%;
   padding: 32px;
   border-radius: 8px;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
+  animation: openModal 0.3s ease normal;
 }
 .modal-confirm__btn {
   display: flex;
@@ -2720,6 +2734,11 @@ textarea.form-control-lg {
   margin: 8px;
 }
 
+@keyframes openModal {
+  0% {
+    scale: 0.9;
+  }
+}
 @media screen and (max-width: 424px) {
   .modal-confirm {
     padding: 32px 12px;

@@ -115,6 +115,15 @@
             grid-template-columns: repeat(4, 1fr);
             padding: 0px 32px;
             gap: 16px;
+
+            &__item {
+                &:hover {
+                    scale: 1;
+                    box-shadow: none;
+                    background: transparent;
+                    padding: 0;
+                }
+            }
         }
     }
 }

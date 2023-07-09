@@ -66,7 +66,7 @@ export const createConfirm = (product) => {
   const template = `
   <div class="modal-confirm">
     <h2 class="modal-confirm__title">¿Seguro quieres eliminar?</h2>
-    <p class="modal-confirm__subtitle">${product.name} (${product.id})</p>
+    <p class="modal-confirm__subtitle">ID: #${product.id}</p>
     <div class="modal-confirm__btn">
       <button class="btn btn-danger" data-modal-confirm>Confirmar</button>
       <button class="btn btn-secondary" data-modal-cancel>Cancelar</button>
