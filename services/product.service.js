@@ -60,6 +60,7 @@ export const delProductById = async (id) => {
     const response = await fetch(`${urlApi}/product/${id}`, {
       method: "DELETE"
     });
+    location.reload();
     return response;
   } catch (error) {
     location.href = '../pages/error/503.html';
