@@ -3,8 +3,8 @@
 import { logoutSession, validateSession } from "../controllers/authentication.controller.js";
 import { createCardAdmin } from "../controllers/create-template.controller.js";
 import { insertConfirm, insertLoading } from "../controllers/extra.controller.js";
-import { userButtonLogout } from "../script/app.js";
-import { getProducts } from "../services/product.service.js";
+import { extraPage, userButtonLogout } from "../script/app.js";
+import { delProductById, getProducts } from "../services/product.service.js";
 
 insertLoading(true);
 
@@ -28,8 +28,20 @@ getProducts().then(data => {
   cardDel.forEach((item, id) => {
     item.addEventListener("click", () => {
       const attribute = item.getAttribute("data-card-del");
-      insertConfirm(data[id]);
-      // delProductById(attribute);
+      insertConfirm(data[id], true);
+
+      const btnConfirm = document.querySelector("[data-modal-confirm]");
+      const btnCancel = document.querySelector("[data-modal-cancel]");
+
+      btnConfirm.addEventListener("click", () => {
+        delProductById(attribute);
+        insertConfirm(data[id], false);
+      });
+
+      btnCancel.addEventListener("click", () => {
+        extraPage.style.display = "none";
+        insertConfirm(data[id], false);
+      });
     });
   });
 });

@@ -17,7 +17,15 @@ export const insertLoading = (active) => {
   }
 }
 
-export const insertConfirm = (product) => {
-  extraPage.style.display = "flex";
-  extraPage.innerHTML += createConfirm(product);
+export const insertConfirm = (product, active) => {
+  switch (active) {
+    case true:
+      extraPage.innerHTML += createConfirm(product);
+      extraPage.style.display = "flex";
+      break;
+    case false:
+      const modal = document.querySelector(".modal-confirm");
+      extraPage.removeChild(modal);
+      break;
+  }
 }

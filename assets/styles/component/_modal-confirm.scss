@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     background: #FFFFFF;
-    width: 500px;
+    max-width: 500px;
     padding: 32px;
     border-radius: 8px;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
@@ -13,7 +13,23 @@
         margin-top: 12px;
 
         button {
-            margin: 4px;
+            margin: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .modal-confirm {
+        padding: 32px 12px;
+
+        &__btn {
+            width: 100%;
+            flex-direction: column;
+
+            button {
+                width: 100%;
+                margin: 0px 0px 8px;
+            }
         }
     }
 }
