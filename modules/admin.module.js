@@ -2,14 +2,14 @@
 
 import { logoutSession, validateSession } from "../controllers/authentication.controller.js";
 import { createCardAdmin } from "../controllers/create-template.controller.js";
-import { insertLoading } from "../controllers/loading.controller.js";
-import { extraPage, userButtonLogout } from "../script/app.js";
-import { delProductById, getProducts } from "../services/product.service.js";
+import { insertConfirm, insertLoading } from "../controllers/extra.controller.js";
+import { userButtonLogout } from "../script/app.js";
+import { getProducts } from "../services/product.service.js";
 
-insertLoading(true, extraPage);
+insertLoading(true);
 
 getProducts().then(data => {
-  insertLoading(false, extraPage);
+  insertLoading(false);
 
   for (let item of data) {
     createCardAdmin(item);
@@ -25,10 +25,11 @@ getProducts().then(data => {
     });
   });
 
-  cardDel.forEach((item) => {
+  cardDel.forEach((item, id) => {
     item.addEventListener("click", () => {
       const attribute = item.getAttribute("data-card-del");
-      delProductById(attribute);
+      insertConfirm(data[id]);
+      // delProductById(attribute);
     });
   });
 });

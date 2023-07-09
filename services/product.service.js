@@ -8,7 +8,7 @@ export const getProducts = async () => {
     const response = await fetch(`${urlApi}/product`);
     return await response.json();
   } catch (error) {
-    location.href = '../pages/error/503.html';
+    location.href = "../pages/error/503.html";
     console.log(error);
   }
 }
@@ -18,7 +18,7 @@ export const getProductById = async (id) => {
     const response = await fetch(`${urlApi}/product/${id}`);
     return await response.json();
   } catch (error) {
-    location.href = '../pages/error/503.html';
+    location.href = "../pages/error/503.html";
     console.log(error);
   }
 }
@@ -34,7 +34,7 @@ export const setProduct = async (image, category, name, price, description) => {
     });
     return response;
   } catch (error) {
-    location.href = '../pages/error/503.html';
+    location.href = "../pages/error/503.html";
     console.log(error);
   }
 }
@@ -50,7 +50,7 @@ export const putProductById = async (id, image, category, name, price, descripti
     });
     return response;
   } catch (error) {
-    location.href = '../pages/error/503.html';
+    location.href = "../pages/error/503.html";
     console.log(error);
   }
 }
@@ -63,7 +63,7 @@ export const delProductById = async (id) => {
     location.reload();
     return response;
   } catch (error) {
-    location.href = '../pages/error/503.html';
+    location.href = "../pages/error/503.html";
     console.log(error);
   }
 }

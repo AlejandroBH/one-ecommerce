@@ -8,7 +8,7 @@ export const getCategory = async () => {
     const response = await fetch(`${urlApi}/category`);
     return await response.json();
   } catch (error) {
-    location.href = '../pages/error/503.html';
+    location.href = "../pages/error/503.html";
     console.log(error);
   }
 }
@@ -18,7 +18,7 @@ export const getCategoryById = async (id) => {
     const response = await fetch(`${urlApi}/category/${id}`);
     return await response.json();
   } catch (error) {
-    location.href = '../pages/error/503.html';
+    location.href = "../pages/error/503.html";
     console.log(error);
   }
 }
@@ -34,7 +34,7 @@ export const setCategory = async (name) => {
     });
     return response;
   } catch (error) {
-    location.href = '../pages/error/503.html';
+    location.href = "../pages/error/503.html";
     console.log(error);
   }
 }

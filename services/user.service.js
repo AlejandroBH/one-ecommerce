@@ -8,7 +8,7 @@ export const getUsers = async () => {
     const response = await fetch(`${urlApi}/user`);
     return await response.json();
   } catch (error) {
-    location.href = '../pages/error/503.html';
+    location.href = "../pages/error/503.html";
     console.log(error);
   }
 }
@@ -18,7 +18,7 @@ export const getUserById = async (id) => {
     const response = await fetch(`${urlApi}/user/${id}`);
     return await response.json();
   } catch (error) {
-    location.href = '../pages/error/503.html';
+    location.href = "../pages/error/503.html";
     console.log(error);
   }
 }
@@ -34,7 +34,7 @@ export const setUser = async (name, email, password) => {
     });
     return response;
   } catch (error) {
-    location.href = '../pages/error/503.html';
+    location.href = "../pages/error/503.html";
     console.log(error);
   }
 }

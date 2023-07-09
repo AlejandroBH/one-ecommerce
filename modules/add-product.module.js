@@ -1,15 +1,15 @@
 "use strict";
 
 import { validateSession } from "../controllers/authentication.controller.js";
-import { insertLoading } from "../controllers/loading.controller.js";
-import { addProductCategory, addProductDescription, addProductForm, addProductImage, addProductName, addProductPrice, extraPage } from "../script/app.js";
+import { insertLoading } from "../controllers/extra.controller.js";
+import { addProductCategory, addProductDescription, addProductForm, addProductImage, addProductName, addProductPrice } from "../script/app.js";
 import { getCategory } from "../services/category.service.js";
 import { setProduct } from "../services/product.service.js";
 
-insertLoading(true, extraPage);
+insertLoading(true);
 
 getCategory().then(data => {
-  insertLoading(false, extraPage);
+  insertLoading(false);
   for (let item of data) {
     const itemCategory = document.createElement("option");
     itemCategory.setAttribute("value",`${item.id}`);

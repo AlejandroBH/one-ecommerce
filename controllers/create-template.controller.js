@@ -62,6 +62,20 @@ export const createAlert = (type, message) => {
   return template;
 }
 
+export const createConfirm = (product) => {
+  const template = `
+  <div class="modal-confirm">
+    <h2 class="modal-confirm__title">Seguro quieres eliminar</h2>
+    <p class="modal-confirm__subtitle">${product.name} (${product.id})</p>
+    <div class="modal-confirm__btn">
+      <button class="btn btn-danger">Confirmar</button>
+      <button class="btn btn-primary">Cancelar</button>
+    </div>
+  </div>
+  `;
+  return template;
+}
+
 export const createLoading = () => {
   const template = `
   <div class="load-products">

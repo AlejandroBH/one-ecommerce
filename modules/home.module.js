@@ -2,15 +2,14 @@
 
 import { validateUser } from "../controllers/authentication.controller.js";
 import { createCardHome, createCategoryTitle } from "../controllers/create-template.controller.js";
-import { insertLoading } from "../controllers/loading.controller.js";
-import { extraPage } from "../script/app.js";
+import { insertLoading } from "../controllers/extra.controller.js";
 import { getCategory } from "../services/category.service.js";
 import { getProducts } from "../services/product.service.js";
 
-insertLoading(true, extraPage);
+insertLoading(true);
 
 getCategory().then(category => {
-  insertLoading(false, extraPage);
+  insertLoading(false);
 
   for (let itemCat of category) {
     createCategoryTitle(itemCat);

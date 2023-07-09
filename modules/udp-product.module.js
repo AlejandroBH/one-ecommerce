@@ -2,17 +2,17 @@
 
 import { validateSession } from "../controllers/authentication.controller.js";
 import { getParamByUrl } from "../controllers/get-param.controller.js";
-import { insertLoading } from "../controllers/loading.controller.js";
-import { addProductForm, addProductCategory, addProductDescription, addProductImage, addProductName, addProductPrice, titleApp, extraPage } from "../script/app.js";
+import { insertLoading } from "../controllers/extra.controller.js";
+import { addProductForm, addProductCategory, addProductDescription, addProductImage, addProductName, addProductPrice, titleApp } from "../script/app.js";
 import { getCategory } from "../services/category.service.js";
 import { getProductById, putProductById } from "../services/product.service.js";
 
-insertLoading(true, extraPage);
+insertLoading(true);
 
 const productId = getParamByUrl("id");
 
 getCategory().then(data => {
-  insertLoading(false, extraPage);
+  insertLoading(false);
   for (let item of data) {
     const itemCategory = document.createElement("option");
     itemCategory.setAttribute("value",`${item.id}`);
