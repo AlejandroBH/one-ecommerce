@@ -42,6 +42,11 @@
                 z-index: 1;
             }
 
+            h5 {
+                max-width: 120px;
+                overflow: hidden;
+            }
+
             &__image {
                 position: relative;
                 width: 100%;

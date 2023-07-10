@@ -38,9 +38,6 @@ if (location.search === "") {
             const btnSubmit = document.querySelector("[data-submit-add]");
             btnSubmit.disabled = true;
             putProductById(productId, addProductImage.value, addProductCategory.value, addProductName.value, addProductPrice.value, addProductDescription.value);
-            setTimeout(() => {
-              location.href = "admin.html";
-            }, 1000);
           }
         });
       }

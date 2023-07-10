@@ -1991,7 +1991,7 @@ textarea.form-control-lg {
   }
   .header__container .btn-outline-primary {
     grid-column: 3/4;
-    width: 133px;
+    max-width: 133px;
     height: 40px;
   }
   .header__container__search-icon {
@@ -2005,6 +2005,10 @@ textarea.form-control-lg {
   }
 }
 @media screen and (max-width: 359px) {
+  .header__container .btn-outline-primary {
+    grid-column: 2/3;
+    width: 100%;
+  }
   .header__container__search-icon {
     color: #464646;
     display: block;
@@ -2142,6 +2146,10 @@ textarea.form-control-lg {
   padding: 5px;
   border-radius: 5px;
   z-index: 1;
+}
+.products__cards__item h5 {
+  max-width: 120px;
+  overflow: hidden;
 }
 .products__cards__item__image {
   margin-bottom: 8px;
@@ -2471,6 +2479,10 @@ textarea.form-control-lg {
   padding: 5px;
   border-radius: 5px;
   z-index: 1;
+}
+.admin__cards__item h5 {
+  max-width: 120px;
+  overflow: hidden;
 }
 .admin__cards__item__image {
   position: relative;

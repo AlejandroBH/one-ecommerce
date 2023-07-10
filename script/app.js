@@ -25,8 +25,8 @@ export const extraPage = document.querySelector(".extra");
 const footerForm = document.querySelector(".footer__container__form");
 
 export const titleApp = "Alura Geek";
-export const urlApi = "https://api-alurageek-eko9.onrender.com"; // Production
-// export const urlApi = "http://localhost:3000"; // Develop
+// export const urlApi = "https://api-alurageek-eko9.onrender.com"; // Production
+export const urlApi = "http://localhost:3000"; // Develop
 
 validateForms();
 

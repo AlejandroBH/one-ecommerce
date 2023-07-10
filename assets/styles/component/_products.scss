@@ -61,6 +61,11 @@
                 z-index: 1;
             }
 
+            h5 {
+                max-width: 120px;
+                overflow: hidden;
+            }
+
             &__image {
                 margin-bottom: 8px;
                 width: 100%;

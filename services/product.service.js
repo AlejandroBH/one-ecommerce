@@ -49,6 +49,7 @@ export const putProductById = async (id, image, category, name, price, descripti
         "Content-Type": "application/json"
       }, body: JSON.stringify(putProduct)
     });
+    location.href = "admin.html";
     return response;
   } catch (error) {
     location.href = "../pages/error/503.html";
