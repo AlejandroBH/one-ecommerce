@@ -2444,6 +2444,7 @@ textarea.form-control-lg {
   max-width: var(--max-width);
   margin: auto;
   padding: 0px 8px 64px;
+  transition: 0.2s;
 }
 .admin__header {
   display: flex;

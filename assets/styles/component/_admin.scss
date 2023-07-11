@@ -2,6 +2,7 @@
     max-width: var(--max-width);
     margin: auto;
     padding: 0px 8px 64px;
+    transition: 0.2s;
 
     &__header {
         display: flex;

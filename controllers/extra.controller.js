@@ -4,9 +4,9 @@ import { adminPage, bodyPage, extraPage } from "../script/app.js";
 import { createConfirm, createLoading } from "./create-template.controller.js";
 
 export const insertLoading = (active) => {
+  bodyPage.style.overflow = "hidden";
   switch (active) {
     case true:
-      bodyPage.style.overflow = "hidden";
       extraPage.innerHTML += createLoading();
       extraPage.style.display = "block";
       break;
@@ -20,10 +20,10 @@ export const insertLoading = (active) => {
 }
 
 export const insertConfirm = (product, active) => {
+  bodyPage.style.overflow = "hidden";
   switch (active) {
     case true:
-      bodyPage.style.overflow = "hidden";
-      adminPage.style.filter = "blur(8px)";
+      adminPage.style.filter = "blur(12px)";
       extraPage.innerHTML += createConfirm(product);
       extraPage.style.display = "flex";
       break;
