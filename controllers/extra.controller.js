@@ -23,7 +23,7 @@ export const insertConfirm = (product, active) => {
   bodyPage.style.overflow = "hidden";
   switch (active) {
     case true:
-      adminPage.style.filter = "blur(12px)";
+      adminPage.style.filter = "blur(2px)";
       extraPage.innerHTML += createConfirm(product);
       extraPage.style.display = "flex";
       break;
