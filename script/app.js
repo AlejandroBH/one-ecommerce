@@ -6,7 +6,6 @@ export const userButton = document.querySelector("[data-user-button]");
 export const userButtonLogout = document.querySelector("[data-user-button-logout]");
 export const products = document.querySelector(".products");
 export const productsCards = document.querySelector(".products__cards");
-export const adminPage = document.querySelector(".admin");
 export const adminCards = document.querySelector(".admin__cards");
 export const viewProductImage = document.querySelector(".view-product__image");
 export const viewProductInfoTitle = document.querySelector(".view-product__info__title");
