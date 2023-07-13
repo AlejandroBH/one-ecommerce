@@ -25,8 +25,8 @@ getCategory().then(category => {
           CardCategory.innerHTML += createCardHome(itemProd);
         }
       }
-    })
+    });
   }
-})
+});
 
 validateUser();
