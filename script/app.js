@@ -23,9 +23,9 @@ export const loginFormAlert = document.querySelector(".login__form__alert");
 export const extraPage = document.querySelector(".extra");
 export const bodyPage = document.querySelector("body");
 export const headerLogo = document.querySelector("[data-header-logo]");
-
+export const searchContainer = document.querySelector("[data-search-container]");
 export const searchInput = document.querySelector("[data-search-input]");
-
+export const searchDropdown = document.querySelector("[data-search-dropdown]");
 export const userButton = document.querySelector("[data-user-button]");
 export const userButtonLogout = document.querySelector("[data-user-button-logout]");
 export const searchIcon = document.querySelector("[data-search-icon]");
@@ -48,4 +48,9 @@ footerForm.addEventListener("submit", () => {
   } else {
     console.log("formulario no enviado");
   }
+});
+
+// TODO - dar funcionalidad a busqueda
+searchInput.addEventListener("keydown", () => {
+  searchDropdown.style.display = "block";
 });

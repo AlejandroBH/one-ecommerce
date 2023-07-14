@@ -13,16 +13,28 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <a href="../index.html"><img class="header__container__logo" src="../assets/images/logo.svg" alt="Alura Geek"></a>
-            <div class="header__container__search">
-                <input class="header__container__search__input" type="text" placeholder="¿Qué deseas buscar?">
+            <a href="../index.html"><img class="header__container__logo" src="../assets/images/logo.svg" alt="Alura Geek" data-header-logo></a>
+            <div class="header__container__search" data-search-container>
+                <input class="header__container__search__input" type="text" placeholder="¿Qué deseas buscar?" data-search-input>
                 <span class="material-symbols-outlined header__container__search__icon">search</span>
             </div>
             <button class="btn btn-outline-primary" data-user-button-logout>Logout</button>
             <div class="header__container__search-icon">
-                <span class="material-symbols-outlined">search</span>
+                <span class="material-symbols-outlined" data-search-icon>search</span>
             </div>
         </div>
+        
+        <div class="search" data-search-dropdown>
+            <div class="search__container">
+                <div class="search__container__div">
+                    <a class="search__container__div__link" href="#"><span class="material-symbols-outlined">link</span>producto 1</a>
+                    <a class="search__container__div__link" href="#"><span class="material-symbols-outlined">link</span>producto 2</a>
+                    <a class="search__container__div__link" href="#"><span class="material-symbols-outlined">link</span>producto 3</a>
+                    <a class="search__container__div__link" href="#"><span class="material-symbols-outlined">link</span>producto 4</a>
+                </div>
+            </div>
+        </div>
+
     </header>
     <section class="error">
         <span class="material-symbols-outlined error__icon">shopping_cart</span>

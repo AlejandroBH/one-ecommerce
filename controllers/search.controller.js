@@ -1,4 +1,4 @@
-import { headerLogo, searchIcon, searchInput, userButton, userButtonLogout } from "../script/app.js";
+import { headerLogo, searchIcon, searchContainer, userButton, userButtonLogout, searchInput, searchDropdown } from "../script/app.js";
 
 export const searchResponsive = () => {
   searchIcon.addEventListener("click", () => {
@@ -11,7 +11,8 @@ export const searchResponsive = () => {
       }
       searchIcon.textContent = "close";
       headerLogo.style.display = "none";
-      searchInput.style = "display: flex; width: 100%;";
+      searchContainer.style = "display: flex; width: 100%;";
+      searchInput.focus();
     }
     else {
       if(userButton) {
@@ -22,7 +23,8 @@ export const searchResponsive = () => {
       }
       searchIcon.textContent = "search";
       headerLogo.style.display = "block";
-      searchInput.style.display = "none";
+      searchContainer.style.display = "none";
+      searchDropdown.style.display = "none";
     }
   });
 }

@@ -2022,6 +2022,8 @@ textarea.form-control-lg {
 .search {
   position: absolute;
   width: 100%;
+  display: none;
+  z-index: 100;
 }
 .search__container {
   position: relative;
@@ -2038,7 +2040,7 @@ textarea.form-control-lg {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 .search__container__div__link {
   text-decoration: none;
