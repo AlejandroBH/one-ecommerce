@@ -33,6 +33,7 @@
             flex-direction: column;
             align-items: flex-start;
             transition: 0.2s;
+            animation: fadeIn 1s ease normal;
 
             &:hover {
                 scale: 1.15;
