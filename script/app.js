@@ -23,7 +23,9 @@ export const loginFormAlert = document.querySelector(".login__form__alert");
 export const extraPage = document.querySelector(".extra");
 export const bodyPage = document.querySelector("body");
 export const headerLogo = document.querySelector("[data-header-logo]");
+
 export const searchInput = document.querySelector("[data-search-input]");
+
 export const userButton = document.querySelector("[data-user-button]");
 export const userButtonLogout = document.querySelector("[data-user-button-logout]");
 export const searchIcon = document.querySelector("[data-search-icon]");
