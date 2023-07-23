@@ -23,6 +23,20 @@ export const getUserById = async (id) => {
   }
 }
 
+export const getUserByInput = async (email, password) => {
+  try {
+    const users = await getUsers();
+    for (let user of users) {
+      if (user.email === email && user.password === password) {
+        return user;
+      }
+    }
+  } catch (error) {
+    location.href = "../pages/error/503.html";
+    console.log(error);
+  }
+}
+
 export const setUser = async (name, email, password) => {
   const addUser = new User(name, email, password)
   try {

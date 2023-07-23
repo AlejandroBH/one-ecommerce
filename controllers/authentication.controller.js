@@ -1,31 +1,23 @@
 "use strict";
 
 import { loginFormAlert, userButton } from "../script/app.js";
-import { getUserById, getUsers } from "../services/user.service.js";
+import { getUserByInput, getUsers } from "../services/user.service.js";
 import { createAlert } from "./create-template.controller.js";
 
-export const validateAuthentication = (email, password) => {
+export const validateAuthentication = async (email, password) => {
   const btnSubmitLogin = document.querySelector("[data-submit-login]");
-  getUsers().then(users => {
-    for (let user of users) {
-      if (user.email === email) {
-        getUserById(user.id).then(user => {
-          if (user.password === password) {
-            loginFormAlert.innerHTML = createAlert("success", "Acceso correcto, por favor espere.");
-            btnSubmitLogin.disabled = true;
-            setTimeout(() => {
-              location.href = "../index.html";
-              localStorage.setItem("login", user.name);
-            }, 1000);
-          } else {
-            loginFormAlert.innerHTML = createAlert("danger", "Los datos ingresados son incorrectos.");
-          }
-        })
-      } else {
-        loginFormAlert.innerHTML = createAlert("danger", "Los datos ingresados son incorrectos.");
-      }
-    }
-  })
+  const user = await getUserByInput(email, password);
+  
+  if (user) {
+    loginFormAlert.innerHTML = createAlert("success", "Acceso correcto, por favor espere.");
+    btnSubmitLogin.disabled = true;
+    setTimeout(() => {
+      localStorage.setItem("login", user.name);
+      location.href = "../index.html";
+    }, 1000)
+  } else {
+    loginFormAlert.innerHTML = createAlert("danger", "Los datos ingresados son incorrectos.");
+  }
 }
 
 export const validateUser = () => {
