@@ -1,4 +1,4 @@
-import { headerLogo, searchIcon, searchContainer, userButton, userButtonLogout, searchInput, searchDropdown } from "../script/app.js";
+import { headerLogo, searchIcon, searchContainer, userButton, userButtonLogout, searchDropdown } from "../script/app.js";
 
 export const searchResponsive = () => {
   searchIcon.addEventListener("click", () => {

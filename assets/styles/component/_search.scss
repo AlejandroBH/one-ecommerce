@@ -40,6 +40,10 @@
                     border-bottom: 1px solid var(--primary);
                 }
             }
+
+            .empty {
+                cursor: default;
+            }
         }
     }
 }

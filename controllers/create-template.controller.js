@@ -86,3 +86,23 @@ export const createLoading = () => {
   `;
   return template;
 }
+
+export const createSearchProduct = (item, active) => {
+  let template = "";
+
+  switch (active) {
+    case true:
+    template = `
+    <a class="search__container__div__link" href="/pages/view-product.html?id=${item.id}">
+    <span class="material-symbols-outlined">link</span>${item.name}</a>
+    `;
+    break
+    case false:
+    template = `
+    <a class="search__container__div__link empty">
+    <span class="material-symbols-outlined">filter_none</span>No hay resultados</a>
+    `;
+    break
+  }
+  return template;
+}
