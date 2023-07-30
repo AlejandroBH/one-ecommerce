@@ -12,7 +12,6 @@ export const searchResponsive = () => {
       searchIcon.textContent = "close";
       headerLogo.style.display = "none";
       searchContainer.style = "display: flex; width: 100%;";
-      // searchInput.focus();
     }
     else {
       if(userButton) {

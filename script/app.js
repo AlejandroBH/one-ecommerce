@@ -2,6 +2,7 @@
 
 import { searchResponsive } from "../controllers/search.controller.js";
 import { validateForms } from "../controllers/validation.controller.js";
+import { getProducts } from "../services/product.service.js";
 
 export const products = document.querySelector(".products");
 export const productsCards = document.querySelector(".products__cards");
@@ -32,8 +33,8 @@ export const searchIcon = document.querySelector("[data-search-icon]");
 const footerForm = document.querySelector(".footer__container__form");
 
 export const titleApp = "Alura Geek";
-export const urlApi = "https://api-alurageek-eko9.onrender.com"; // Production
-// export const urlApi = "http://localhost:3000"; // Develop
+// export const urlApi = "https://api-alurageek-eko9.onrender.com"; // Production
+export const urlApi = "http://localhost:3000"; // Develop
 
 validateForms();
 searchResponsive();
@@ -51,6 +52,16 @@ footerForm.addEventListener("submit", () => {
 });
 
 // TODO - dar funcionalidad a busqueda
-searchInput.addEventListener("keydown", () => {
+searchInput.addEventListener("keydown", async () => {
   searchDropdown.style.display = "block";
+
+  const products = await getProducts();
+  const searchProduct = searchInput.value.toLowerCase();
+
+  products.filter((item) => {
+    if (item.name.toLowerCase().includes(searchProduct) && searchProduct !== "") {
+      // TODO - crear funcion que muestre resultados de busqueda
+      console.log(item.name, item.id);
+    }
+  });
 });
