@@ -93,7 +93,7 @@ export const createSearchProduct = (item, active) => {
   switch (active) {
     case true:
     template = `
-    <a class="search__container__div__link" href="/pages/view-product.html?id=${item.id}">
+    <a class="search__container__div__link" href="pages/view-product.html?id=${item.id}">
     <span class="material-symbols-outlined">link</span>${item.name}</a>
     `;
     break
