@@ -1,6 +1,6 @@
 "use strict";
 
-import { createSearchProduct } from "../controllers/create-template.controller.js";
+import { createSearchProduct, emptySearchProduct } from "../controllers/create-template.controller.js";
 import { searchResponsive } from "../controllers/search.controller.js";
 import { validateForms } from "../controllers/validation.controller.js";
 import { getProducts } from "../services/product.service.js";
@@ -53,18 +53,20 @@ footerForm.addEventListener("submit", () => {
   }
 });
 
-searchInput.addEventListener("keydown", async () => {
+searchInput.addEventListener("input", async () => {
   searchDropdown.style.display = "block";
   searchResult.innerHTML = "";
 
   const products = await getProducts();
   const searchProduct = searchInput.value.toLowerCase();
 
-  products.filter((item) => {
-    if (item.name.toLowerCase().includes(searchProduct) && searchProduct !== "") {
-      searchResult.innerHTML += createSearchProduct(item, true);
-    } else {
-      searchResult.innerHTML = createSearchProduct(item, false);
-    }
-  });
+  const matchingProducts = products.filter((item) => 
+    item.name.toLowerCase().includes(searchProduct) && searchProduct !== ""
+  );
+
+  if (matchingProducts.length > 0) {
+    searchResult.innerHTML = matchingProducts.map((item) => createSearchProduct(item)).join('');
+  } else {
+    searchResult.innerHTML = emptySearchProduct();
+  }
 });

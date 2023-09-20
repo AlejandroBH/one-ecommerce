@@ -87,22 +87,18 @@ export const createLoading = () => {
   return template;
 }
 
-export const createSearchProduct = (item, active) => {
-  let template = "";
+export const createSearchProduct = (item) => {
+  let template = `
+  <a class="search__container__div__link" href="../pages/view-product.html?id=${item.id}">
+  <span class="material-symbols-outlined">link</span>${item.name}</a>
+  `;
+  return template;
+}
 
-  switch (active) {
-    case true:
-    template = `
-    <a class="search__container__div__link" href="pages/view-product.html?id=${item.id}">
-    <span class="material-symbols-outlined">link</span>${item.name}</a>
-    `;
-    break
-    case false:
-    template = `
-    <a class="search__container__div__link empty">
-    <span class="material-symbols-outlined">filter_none</span>No hay resultados</a>
-    `;
-    break
-  }
+export const emptySearchProduct = () => {
+  let template = `
+  <a class="search__container__div__link empty">
+  <span class="material-symbols-outlined">filter_none</span>No hay resultados</a>
+  `;
   return template;
 }
