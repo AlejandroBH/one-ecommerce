@@ -6,6 +6,7 @@ import { insertLoading } from "../controllers/extra.controller.js";
 import { addProductForm, addProductCategory, addProductDescription, addProductImage, addProductName, addProductPrice, titleApp } from "../script/app.js";
 import { getCategory } from "../services/category.service.js";
 import { getProductById, putProductById } from "../services/product.service.js";
+import { searchProductInput } from "../controllers/search.controller.js";
 
 insertLoading(true);
 
@@ -46,3 +47,5 @@ if (location.search === "") {
 }
 
 validateSession();
+
+searchProductInput(false);

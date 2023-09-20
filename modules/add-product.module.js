@@ -2,6 +2,7 @@
 
 import { validateSession } from "../controllers/authentication.controller.js";
 import { insertLoading } from "../controllers/extra.controller.js";
+import { searchProductInput } from "../controllers/search.controller.js";
 import { addProductCategory, addProductDescription, addProductForm, addProductImage, addProductName, addProductPrice } from "../script/app.js";
 import { getCategory } from "../services/category.service.js";
 import { setProduct } from "../services/product.service.js";
@@ -34,3 +35,5 @@ addProductForm.addEventListener("submit", () => {
 });
 
 validateSession();
+
+searchProductInput(false);

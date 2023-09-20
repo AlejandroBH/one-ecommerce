@@ -5,6 +5,7 @@ import { getParamByUrl } from "../controllers/get-param.controller.js";
 import { insertLoading } from "../controllers/extra.controller.js";
 import { titleApp, viewProductImage, viewProductInfoDescription, viewProductInfoPrice, viewProductInfoTitle } from "../script/app.js";
 import { getProductById, getProducts } from "../services/product.service.js";
+import { searchProductInput } from "../controllers/search.controller.js";
 
 insertLoading(true);
 
@@ -53,3 +54,5 @@ if (location.search === "") {
     }
   });
 }
+
+searchProductInput(false);

@@ -3,6 +3,7 @@
 import { logoutSession, validateSession } from "../controllers/authentication.controller.js";
 import { createCardAdmin } from "../controllers/create-template.controller.js";
 import { insertConfirm, insertLoading } from "../controllers/extra.controller.js";
+import { searchProductInput } from "../controllers/search.controller.js";
 import { extraPage, userButtonLogout } from "../script/app.js";
 import { delProductById, getProducts } from "../services/product.service.js";
 
@@ -49,3 +50,5 @@ getProducts().then(data => {
 userButtonLogout.addEventListener("click", logoutSession);
 
 validateSession();
+
+searchProductInput(false);

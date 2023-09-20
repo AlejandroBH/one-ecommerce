@@ -87,16 +87,26 @@ export const createLoading = () => {
   return template;
 }
 
-export const createSearchProduct = (item) => {
-  let template = `
-  <a class="search__container__div__link" href="../pages/view-product.html?id=${item.id}">
-  <span class="material-symbols-outlined">link</span>${item.name}</a>
-  `;
+export const createSearchProduct = (item, pagefix) => {
+  let template = "";
+
+  switch (pagefix) {
+    case true: template = `
+    <a class="search__container__div__link" href="pages/view-product.html?id=${item.id}">
+    <span class="material-symbols-outlined">link</span>${item.name}</a>
+    `;
+    break;
+    case false: template = `
+    <a class="search__container__div__link" href="../pages/view-product.html?id=${item.id}">
+    <span class="material-symbols-outlined">link</span>${item.name}</a>
+    `;
+    break;
+  }
   return template;
 }
 
 export const emptySearchProduct = () => {
-  let template = `
+  const template = `
   <a class="search__container__div__link empty">
   <span class="material-symbols-outlined">filter_none</span>No hay resultados</a>
   `;

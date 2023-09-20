@@ -1,9 +1,7 @@
 "use strict";
 
-import { createSearchProduct, emptySearchProduct } from "../controllers/create-template.controller.js";
 import { searchResponsive } from "../controllers/search.controller.js";
 import { validateForms } from "../controllers/validation.controller.js";
-import { getProducts } from "../services/product.service.js";
 
 export const products = document.querySelector(".products");
 export const productsCards = document.querySelector(".products__cards");
@@ -28,7 +26,7 @@ export const headerLogo = document.querySelector("[data-header-logo]");
 export const searchContainer = document.querySelector("[data-search-container]");
 export const searchInput = document.querySelector("[data-search-input]");
 export const searchDropdown = document.querySelector("[data-search-dropdown]");
-const searchResult = document.querySelector("[data-search-result]");
+export const searchResult = document.querySelector("[data-search-result]");
 export const userButton = document.querySelector("[data-user-button]");
 export const userButtonLogout = document.querySelector("[data-user-button-logout]");
 export const searchIcon = document.querySelector("[data-search-icon]");
@@ -50,23 +48,5 @@ footerForm.addEventListener("submit", () => {
     console.log("formulario enviado");
   } else {
     console.log("formulario no enviado");
-  }
-});
-
-searchInput.addEventListener("input", async () => {
-  searchDropdown.style.display = "block";
-  searchResult.innerHTML = "";
-
-  const products = await getProducts();
-  const searchProduct = searchInput.value.toLowerCase();
-
-  const matchingProducts = products.filter((item) => 
-    item.name.toLowerCase().includes(searchProduct) && searchProduct !== ""
-  );
-
-  if (matchingProducts.length > 0) {
-    searchResult.innerHTML = matchingProducts.map((item) => createSearchProduct(item)).join('');
-  } else {
-    searchResult.innerHTML = emptySearchProduct();
   }
 });

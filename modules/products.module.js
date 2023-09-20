@@ -6,6 +6,7 @@ import { insertLoading } from "../controllers/extra.controller.js";
 import { titleApp } from "../script/app.js";
 import { getCategoryById } from "../services/category.service.js";
 import { getProducts } from "../services/product.service.js";
+import { searchProductInput } from "../controllers/search.controller.js";
 
 const categoryId = getParamByUrl("category");
 const header = document.querySelector(".products__header");
@@ -35,3 +36,5 @@ if (location.search === ""){
     }
   });
 }
+
+searchProductInput(false);
