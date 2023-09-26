@@ -30,12 +30,13 @@ export const searchResponsive = () => {
   });
 }
 
-export const searchProductInput = (fixpage) => {
-  searchInput.addEventListener("input", async () => {
+export const searchProductInput = async (fixpage) => {
+  const products = await getProducts();
+
+  searchInput.addEventListener("input", () => {
     searchDropdown.style.display = "block";
     searchResult.innerHTML = "";
   
-    const products = await getProducts();
     const searchProduct = searchInput.value.toLowerCase();
   
     const matchingProducts = products.filter((item) => 
